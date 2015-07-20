@@ -140,3 +140,5 @@ config.middleware.delete "Rack::Lock"
 [Rails guide](http://guides.rubyonrails.org/rails_on_rack.html){:target="_blank"}{:rel="nofollow"}
 
 [Rails source code](https://github.com/rails/rails){:target="_blank"}{:rel="nofollow"}
+
+*Vinh Nguyen*
