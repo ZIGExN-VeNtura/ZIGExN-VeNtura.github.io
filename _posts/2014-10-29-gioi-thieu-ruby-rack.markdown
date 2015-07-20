@@ -213,3 +213,5 @@ Vì thế khi access địa chỉ [http://localhost:9292](http://localhost:9292)
 Bên cạnh các chức năng cơ bản trên, Rack còn implement sẵn một số hàm helper như parse params, build response,... Chi tiết hơn có thể tham khảo ở document của Rack tại: [http://www.rubydoc.info/github/rack/rack](http://www.rubydoc.info/github/rack/rack){:target="_blank"}{:rel="nofollow"}
 
 Trên đây là những kiến thức căn bản về Ruby Rack. Hy vọng đã giúp mọi người hiểu rõ về nó.
+
+*Vinh Nguyen*
