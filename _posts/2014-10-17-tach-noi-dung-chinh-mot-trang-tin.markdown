@@ -83,3 +83,5 @@ Ta cần điều chỉnh p, q sao cho ra kết quả chính xác nhất. Có th�
 Đến đây thì thuật toán của ta cũng gần gần hoàn thiện, nếu tinh chỉnh hệ số p, q thích hợp độ chính xác khá cao.
 
 Trong bài sau, mình sẽ trình bày một số cái tiến khác, đồng thời thử áp dụng cách thứ 2 xem có hiệu quả hơn không.
+
+*Vinh Nguyen*
