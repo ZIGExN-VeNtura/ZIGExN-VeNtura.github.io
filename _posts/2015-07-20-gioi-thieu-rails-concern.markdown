@@ -213,3 +213,5 @@ Chi tiết về module Concern có thể tham khảo tại:
 [http://api.rubyonrails.org/classes/ActiveSupport/Concern.html](http://api.rubyonrails.org/classes/ActiveSupport/Concern.html){:target="_blank"}{:rel="nofollow"}
 
 [https://github.com/rails/rails/blob/master/activesupport/lib/active_support/concern.rb](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/concern.rb){:target="_blank"}{:rel="nofollow"}
+
+*Vinh Nguyen*
