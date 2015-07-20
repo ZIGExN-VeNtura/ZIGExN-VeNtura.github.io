@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Giới thiệu module Rails Concern"
-date:   2014-11-30 00:03:04
+date:   2015-07-20 00:03:04
 summary: Giới thiệu về module Concern của Rails. Một module rất đơn giản nhưng đôi khi rất hữu dụng khi refactor các phần code dùng chung của model.
 categories: rails
 ---
