@@ -2,6 +2,7 @@
 layout: post
 title:  "Tách nội dung chính của một trang tin tức"
 date:   2014-10-17 23:55:00
+name: Vinh Nguyen
 summary: Trong bài viết này mình xin trình bày một thuật toán để tách nội dung chính của một trang web(tin tức).
 categories: ruby
 ---
@@ -26,7 +27,7 @@ link một bài báo sau khi đã tách được nội dung chính:
 
 Link gốc: [http://dulich.tuoitre.vn/tin/20140929/di-tren-nhung-cay-cau-ky-la-nhat-the-gioi/651937.html](http://dulich.tuoitre.vn/tin/20140929/di-tren-nhung-cay-cau-ky-la-nhat-the-gioi/651937.html){:target="_blank"}{:rel="nofollow"}
 
-Sau khi đã tách nội dung chính: 
+Sau khi đã tách nội dung chính:
 
 [http://newslook.herokuapp.com/read?url=http%3A%2F%2Fdulich.tuoitre.vn%2Ftin%2F20140929%2Fdi-tren-nhung-cay-cau-ky-la-nhat-the-gioi%2F651937.html](http://newslook.herokuapp.com/read?url=http%3A%2F%2Fdulich.tuoitre.vn%2Ftin%2F20140929%2Fdi-tren-nhung-cay-cau-ky-la-nhat-the-gioi%2F651937.html){:target="_blank"}{:rel="nofollow"}
 
@@ -35,7 +36,7 @@ Trở lại vấn đề, mình có 2 hướng giải quyết:
   1. Dùng một số đánh giá Heuristic đơn giản để lựa ra phần có nội dung có vẻ là nội dung chính nhất.
   2. Dùng Machine Learning/Statistic: cho một số pattern mẫu vào training set, dùng các thuật toán Supervised
   Learning để giúp nhận dạng được các pattern khác.
-  
+
 Cách 2 có vẻ khoai, nên thử cách 1 trước xem sao!
 
 Trước hết ta có quan sát đơn giản như sau:
@@ -57,18 +58,18 @@ __B 1.1:__ Với mỗi node thứ N ta gọi:
 
     text(N) = text trong N, và các con của N
     link(N) = tất cả các link thuộc node N(bao gồm cả node con, node cháu...)
-  
+
 __B 1.2:__ Ta tính tỉ lệ giữa link và text bằng công thức:
 
 $$\frac{text(N) - link(N)}{text(N)}$$
-  
+
 __B 1.3:__ Node có radio lớn nhất chính là node cần tìm.
 
 Thuật toán rất đơn giản! Tuy nhiên có môt nhược điểm rất lớn ở đây: thuật toán có khuynh hướng lấy các node chỉ
 toàn text và không chứa bất cứ link nào, khi đó node đó sẽ có radio = 1(lớn nhất!). Ví dụ một node có radio = 1
 
     <p>This node will have a radio of 1<p>
-    
+
 Vì thế, ta có một cải tiến nho nhỏ như sau:
 
 *Cải tiến 1*: thay vì chỉ đánh giá radio(N) theo text và link, ta đánh giá thêm một tham số nữa: tỉ lệ text chứa
@@ -77,7 +78,7 @@ trong node N trên toàn bộ text của trang web. Khi đó công thức tính 
 $$radio(N) = p\frac{(text(N) - link(N))}{text(N)} + q\frac{text(N)}{total\_text}$$
 
     Trong đó để đảm bảo radio thuộc khoang [0,1] ta ràng buộc p + q = 1
-    
+
 Ta cần điều chỉnh p, q sao cho ra kết quả chính xác nhất. Có thể đánh giá dựa trên các tỉ lệ precision, recall, ... Hiện tại mình đang dùng p = 0.99, q = 0.01
 
 Đến đây thì thuật toán của ta cũng gần gần hoàn thiện, nếu tinh chỉnh hệ số p, q thích hợp độ chính xác khá cao.

@@ -3,22 +3,42 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+  <h1>ZIGExN VeNtura</h1>
+  <h1 class="page-heading">Bring Innovation from Vietnam to the World!</h1>
+  <div class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+      <div class="post-item">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - <a href="#">{{ post.name }}</a> - <a href="#">{{post.categories }}</a></span>
+        <img class="img_post" src="http://zigexn.vn/assets/img3-8c42ab41b2419c09a083e9c0b68f2636.jpg" alt="http://zigexn.vn/assets/img3-8c42ab41b2419c09a083e9c0b68f2636.jpg">
         <h2>
+        <br/>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <p>{{ post.summary  }}</p>
-      </li>
+      </div>
     {% endfor %}
-  </ul>
-
+  </div>
+  <div class="nav-right">
+    <div class="recent_post">
+      <ul>Giới thiệu module Rails Concern</ul>
+      <ul>Giới thiệu module Rails Concern</ul>
+      <ul>Giới thiệu module Rails Concern</ul>
+    </div>
+    <div class="monthly_articless">
+       <ul>Giới thiệu module Rails Concern</ul>
+      <ul>Giới thiệu module Rails Concern</ul>
+      <ul>Giới thiệu module Rails Concern</ul>
+    </div>
+    <div class="follow">
+    <ul class="social-media-list">
+      <li>
+            <a href="https://facebook.com/{{ site.facebook_username }}">
+              <span class="username">Follow us on Facebook's group for more technical articles</span>
+            </a>
+          </li>
+    </div>
+  </div>
+<br/>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

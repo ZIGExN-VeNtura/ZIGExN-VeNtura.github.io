@@ -17,9 +17,9 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
+    font-weight: 300px;
     background-color: $background-color;
+    color: $text-color;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -98,7 +98,7 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        /*text-decoration: underline;*/
     }
 }
 
@@ -154,8 +154,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(1100px - (#{$spacing-unit} * 2));
+    max-width:         calc(1100px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;

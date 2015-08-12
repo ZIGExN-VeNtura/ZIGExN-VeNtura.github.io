@@ -1,13 +1,30 @@
 /**
  * Site header
  */
+ .wrapper-header{
+    max-width: calc(1200px - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(800px - (#{$spacing-unit}));
+        max-width:         calc(800px - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+ }
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    width: 100%;
+    border-top: 5px solid #B11F28;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
+    min-height: 60px;
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
+    z-index: 9999;
+    background-color: #333;
+    font-family: "Times New Roman", Georgia, Serif;
 }
 
 .site-title {
@@ -19,20 +36,20 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;
     }
 }
 
 .site-nav {
     float: right;
     line-height: 56px;
-
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: $text-color;
+        font-family: "Times New Roman", Georgia, Serif;
+        color: white;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -72,6 +89,7 @@
         .trigger {
             clear: both;
             display: none;
+            font-family: "Times New Roman", Georgia, Serif;
         }
 
         &:hover .trigger {
@@ -162,14 +180,17 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spacing-unit + 70 0;
 }
 
 .page-heading {
     font-size: 20px;
+    color: #545454;
 }
 
 .post-list {
+    width: 80%;
+    float: left;
     margin-left: 0;
     list-style: none;
 
@@ -186,9 +207,16 @@
 .post-link {
     display: block;
     font-size: 24px;
+    text-align: center;
 }
-
-
+.post-item {
+    border: 1px solid $grey-color-light;
+    width: 45%;
+    height: 500px;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+}
 
 /**
  * Posts
@@ -233,4 +261,18 @@
             font-size: 18px;
         }
     }
+}
+
+/**
+* nav-right
+*/
+.rss-subscribe{
+    width: 100%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px
+}
+.nav-right{
+    width: 20%;
+    float: right;
 }

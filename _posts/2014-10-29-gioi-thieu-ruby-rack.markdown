@@ -2,6 +2,7 @@
 layout: post
 title:  "Giới thiệu Ruby Rack"
 date:   2014-10-29 23:55:00
+name: Vinh Nguyen
 summary: Nếu đã từng lập trình web với Ruby, bạn đã làm việc với Rack. Có thể nói Rack chính là nền tảng cho các web framework của Ruby. Từ Sinatra, Rails, đến các framework gần đây như Lotus đều dựa trên nền tảng của Rack. Tìm hiểu về Rack giúp ta có hiểu được cách thức hoạt động của các web framework, từ đó tùy biến chúng dễ dàng hơn.
 categories: ruby
 ---
@@ -14,7 +15,7 @@ __1. Rack là gì?__
 
 Document của Rack cung cấp thông tin về Rack như sau:
 
-> Rack provides a minimal interface between webservers supporting Ruby and Ruby frameworks. 
+> Rack provides a minimal interface between webservers supporting Ruby and Ruby frameworks.
 
 Vậy có thể hiểu Rack là bước đệm giữa web server và framework Ruby. Webserver ở đây có thể là WEBrick, Thin, Unicorn, Puma, và web framework
 ở đây có thể là Rails, Sinatra, ... Webserver và web framework sẽ dùng Rack để nói chuyện với nhau.
@@ -126,7 +127,7 @@ Dùng tham số `PATH_INFO` ta có thể implement một hàm routing đơn gi�
 class SimpleRack
   def self.call(env)
     params = parse_param(env['QUERY_STRING'])
-    
+
     body = routing(env['PATH_INFO'], params)
 
     [
@@ -178,11 +179,11 @@ class Logger
   def initialize
     @app = app
   end
-  
+
   def call(env)
     status, header, body = @app.call(env)
     body.unshift("Info: This is log of Logger middleware\n")
-    
+
     [status, header, body]
   end
 end

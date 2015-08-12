@@ -2,6 +2,7 @@
 layout: post
 title:  "Giới thiệu module Rails Concern"
 date:   2015-07-20 00:03:04
+name: Vinh Nguyen
 summary: Giới thiệu về module Concern của Rails. Một module rất đơn giản nhưng đôi khi rất hữu dụng khi refactor các phần code dùng chung của model.
 categories: rails
 ---
@@ -25,7 +26,7 @@ end
 module Enumerable
   include A
 end
-# 
+#
 {% endhighlight %}
 
 Khi chạy file `test.rb` trên sẽ được kết quả:
@@ -38,7 +39,7 @@ Khi chạy file `test.rb` trên sẽ được kết quả:
 {% highlight ruby %}
 class Entry
   validates_presence_of :user_id
-  
+
   # formated post time
   def posted_at
     created_at.strftime("%Y/%m/%d")
@@ -47,7 +48,7 @@ end
 
 class Comment
   validates_presence_of :user_id
-  
+
   # formated post time
   def posted_at
     created_at.strftime("%Y/%m/%d")
@@ -64,7 +65,7 @@ module Postable
       validates_presence_of :user_id
     end
   end
-  
+
   def posted_at
     created_at.strftime("%Y/%m/%d")
   end
@@ -88,7 +89,7 @@ module Postable
   def posted_at
     created_at.strftime("%Y/%m/%d")
   end
-  
+
   def self.find_by_user_id
     # ...
   end
@@ -113,7 +114,7 @@ module Postable
   def self.included(base)
     base.extend(ClassMethods)
   end
-  
+
   module ClassMethods
     def find_by_user_id
       # ...
@@ -137,7 +138,7 @@ module Postable
   included do
     validates_presence_of :user_id
   end
-  
+
   module ClassMethods
     def find_by_user_id
       # ...
@@ -197,7 +198,7 @@ end
 module B
   extend ActiveSupport::Concern
   include A
-  
+
   included do
   self.method_of_module_a
   end

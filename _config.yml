@@ -9,6 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "zigexn-ventura.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+facebook_username: ZigexnVenturaCoLtd
 
 # Build settings
 markdown: kramdown
