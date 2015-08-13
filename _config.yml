@@ -1,5 +1,5 @@
 # Site settings
-title: ZIGExN VeNtura Technical Blog
+title: Technical Blog
 email: g-dev@zigexn.vn
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -10,6 +10,8 @@ url: "zigexn-ventura.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 facebook_username: ZigexnVenturaCoLtd
-
+website: zigexn.vn
 # Build settings
 markdown: kramdown
+link_recruitment: http://recruitment.zigexn.vn/
+#paginate: 2

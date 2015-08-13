@@ -2,9 +2,9 @@
 layout: post
 title:  "Tách nội dung chính của một trang tin tức"
 date:   2014-10-17 23:55:00
-name: Vinh Nguyen
+author: Vinh Nguyen
 summary: Trong bài viết này mình xin trình bày một thuật toán để tách nội dung chính của một trang web(tin tức).
-categories: ruby
+categories: Rails
 ---
 
 __Vấn đề:__ với một người rất hay đọc báo/blog online như mình, chức năng Reader của Safari rất hữu dụng.
