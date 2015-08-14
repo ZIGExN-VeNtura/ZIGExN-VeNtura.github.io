@@ -9,37 +9,25 @@
           <li><a href="/about/">About US</a>
           <li><a href="#">Categories</a>
           <ul>
-            <li><a href="categories_articles/#ruby on rails">Ruby on Rails</a>
+            <li><a href="/categories_articles/#ruby on rails">Ruby on Rails</a>
               <ul>
-                <li><a href="categories_articles/#n+1 problem">N+1 problem</a></li>
-                <li><a href="#">Rails concern</a></li>
-                <li><a href="#">Arel </a></li>
-                <li><a href="#">Rails API </a></li>
-                <li><a href="#">Bang Method</a></li>
-                <li><a href="#">Debug</a></li>
-                <li><a href="#">How to use S3 </a></li>
-                <li><a href="#">Rubocop</a></li>
-                <li><a href="#">Translated content</a></li>
+              {% for item in site.RoR %}
+                <li><a href="/tags_articles/#{{ item }}">{{ item }}</a></li>
+              {% endfor %}
               </ul>
             </li>
-            <li><a href="#">Web Development</a>
+            <li><a href="/categories_articles/#web development">Web Development</a>
               <ul>
-                <li><a href="#">Design pattern</a></li>
-                <li><a href="#">Refactaring series</a></li>
-                <li><a href="#">JS Topic</a></li>
-                <li><a href="#">Solr</a></li>
-                <li><a href="#">Lucene</a></li>
-                <li><a href="#">Scrum</a></li>
+              {% for item in site.WebDev %}
+                <li><a href="/tags_articles/#{{ item }}">{{ item }}</a></li>
+              {% endfor %}
               </ul>
             </li>
-            <li><a href="#">Infrastracrue</a>
+            <li><a href="/categories_articles/#infrastracrue">Infrastracrue</a>
               <ul>
-                <li><a href="#">Docker</a></li>
-                <li><a href="#">Zabix</a></li>
-                <li><a href="#">Capistrano</a></li>
-                <li><a href="#">How to use nginx</a></li>
-                <li><a href="#">Unicorn</a></li>
-                <li><a href="#">Apache</a></li>
+              {% for item in site.Infrastracrue %}
+                <li><a href="/tags_articles/#{{ item }}">{{ item }}</a></li>
+              {% endfor %}
               </ul>
             </li>
           </ul>
@@ -47,17 +35,6 @@
         </ul>
       </nav>
     </div>
-
-   <!--  <nav class="site-nav">
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav> -->
-
   </div>
 
 </header>

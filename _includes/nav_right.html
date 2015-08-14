@@ -24,20 +24,27 @@
     </h3>
     <div class="ArticleBox_content">
       <ul class="ArticleBox_list t-list">
-        {% for category in site.categories %}
-          <li>
-             &raquo; <a href="/categories_articles/#{{ category | first }}">{{ category | first }}</a>
-            <ul>
-              {% for posts in category %}
-                {% for post in posts %}
-                  {% if post.title != % %}
-                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                  {% endif %}
-                {% endfor %}
-              {% endfor %}
-            </ul>
-          </li>
-        {% endfor %}
+        <li><a href="/categories_articles/#ruby on rails">Ruby on Rails</a>
+          <ul>
+          {% for item in site.RoR %}
+            <li><a href="/tags_articles/#{{ item }}">{{ item }}</a></li>
+          {% endfor %}
+          </ul>
+        </li>
+        <li><a href="/categories_articles/#web development">Web Development</a>
+          <ul>
+          {% for item in site.WebDev %}
+            <li><a href="/tags_articles/#{{ item }}">{{ item }}</a></li>
+          {% endfor %}
+          </ul>
+        </li>
+        <li><a href="/categories_articles/#infrastracrue">Infrastracrue</a>
+          <ul>
+          {% for item in site.Infrastracrue %}
+            <li><a href="/tags_articles/#{{ item }}">{{ item }}</a></li>
+          {% endfor %}
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -50,7 +57,7 @@
     </h3>
     <div class="ArticleBox_content">
       <ul class="ArticleBox_list t-list">
-       {% assign counter = 0 %}
+        {% assign counter = 0 %}
         {% for post in site.posts %}
           {% assign thisyear = post.date | date: "%B %Y" %}
           {% assign prevyear = post.previous.date | date: "%B %Y" %}
@@ -66,12 +73,12 @@
 </div>
 
 <div class="follow">
-<ul class="social-media-list">
-  <li>
-    Connect with us: <br><img class="icon_fb" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" alt="logo-facebook"><a class="btn_fb" href="https://facebook.com/{{ site.facebook_username }}">
-      <span class="username">Facebook</span>
-    </a><br>
-    <span class="username">Follow us on Facebook's group for more technical articles</span>
-  </li>
-</ul>
+  <ul class="social-media-list">
+    <li>
+      Connect with us: <br><img class="icon_fb" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" alt="logo-facebook"><a class="btn_fb" href="https://facebook.com/{{ site.facebook_username }}">
+        <span class="username">Facebook</span>
+      </a><br>
+      <span class="username">Follow us on Facebook's group for more technical articles</span>
+    </li>
+  </ul>
 </div>

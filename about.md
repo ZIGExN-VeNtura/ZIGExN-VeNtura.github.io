@@ -26,6 +26,7 @@ permalink: /about/
   <span class="evolution_title">Evolution</span>
   <p>Luôn luôn phát triển không ngừng để đạt được những sự tăng trưởng nhanh chóng.</p>
 </div>
+
 <div class="img_about">
   <img src="http://zigexn.vn/assets/Entrepreneurship-8f5c6b8035a1e159823ccd1eff7bedd1.png" alt="gioi-thieu-zigexn">
 </div>

@@ -14,4 +14,7 @@ website: zigexn.vn
 # Build settings
 markdown: kramdown
 link_recruitment: http://recruitment.zigexn.vn/
+RoR: [N+1 problem, Rails concern,Arel, Rails API, Bang Method, Debug, How to use S3, Rubocop, Translated content]
+WebDev: [Design pattern, Refactaring series, JS Topic, Solr, Lucene, Scrum]
+Infrastracrue: [Docker, Zabix, Capistrano, How to use nginx, Unicorn, Apache]
 #paginate: 2

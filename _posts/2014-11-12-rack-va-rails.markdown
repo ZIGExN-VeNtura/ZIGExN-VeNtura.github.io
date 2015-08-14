@@ -4,7 +4,8 @@ title:  "Rails on Rack"
 date:   2014-11-07 23:55:00
 author: Vinh Nguyen
 summary: Tiếp theo bài giới thiệu về Ruby Rack trước, bài viết này sẽ đi sâu vào phân tích ứng dụng của Rack trong Rails.
-categories: ruby rails
+categories: [Web Development]
+tags: [Zabix, Docker]
 ---
 
 Tiếp theo [bài viết trước](http://zinh.github.io/ruby/2014/10/16/gioi-thieu-ruby-rack.html), trong bài này mình sẽ đi sâu vào phân tích ứng dụng của Rack với framework Rails.
