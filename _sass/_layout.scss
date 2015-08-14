@@ -499,3 +499,77 @@
     color: #1ABC9C;
     text-decoration: none;
 }
+
+/*****************************************/
+.dropdown{
+  float: right;
+  line-height: 56px;
+  height: 56px;
+  nav {
+    margin: auto;
+    background-color: #333;
+  }
+  nav:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+  nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+  }
+  nav ul li {
+    margin: 0px;
+    display:inline-block;
+    float: left;
+    background-color: #333;
+  }
+
+  /* Styling the links */
+  nav a {
+    display:block;
+    padding:0 10px;
+    color:#FFF;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+  }
+
+  /* Background color change on Hover */
+  nav a:hover {
+    background-color: #4A4646;
+  }
+
+  /* Hide Dropdowns by Default
+   * and giving it a position of absolute */
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+  }
+
+  nav ul li:hover > ul {
+    display:inherit;
+  }
+
+  nav ul ul li {
+    width:200px;
+    float:none;
+    display:list-item;
+    position: relative;
+  }
+
+  nav ul ul ul li {
+    position: relative;
+    top:-60px;
+
+    @media (max-width: 1500px) {right:200px;}
+     @media (min-width: 1500px) {left:200px;}
+
+  }
+
+  li > a:after { content:  ''; }
+  li > a:only-child:after { content: ''; }
+}

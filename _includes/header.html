@@ -3,16 +3,52 @@
   <div class="wrapper-header">
 
     <a class="site-title" href="{{ site.baseurl }}/"><img alt="logo zigexn ventura" class="img-responsive" src="http://recruitment.zigexn.vn/img/logo.png">{{ site.title }}</a>
+    <div class="dropdown">
+      <nav>
+        <ul class="clearfix">
+          <li><a href="/about/">About US</a>
+          <li><a href="#">Categories</a>
+          <ul>
+            <li><a href="categories_articles/#ruby on rails">Ruby on Rails</a>
+              <ul>
+                <li><a href="categories_articles/#n+1 problem">N+1 problem</a></li>
+                <li><a href="#">Rails concern</a></li>
+                <li><a href="#">Arel </a></li>
+                <li><a href="#">Rails API </a></li>
+                <li><a href="#">Bang Method</a></li>
+                <li><a href="#">Debug</a></li>
+                <li><a href="#">How to use S3 </a></li>
+                <li><a href="#">Rubocop</a></li>
+                <li><a href="#">Translated content</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Web Development</a>
+              <ul>
+                <li><a href="#">Design pattern</a></li>
+                <li><a href="#">Refactaring series</a></li>
+                <li><a href="#">JS Topic</a></li>
+                <li><a href="#">Solr</a></li>
+                <li><a href="#">Lucene</a></li>
+                <li><a href="#">Scrum</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Infrastracrue</a>
+              <ul>
+                <li><a href="#">Docker</a></li>
+                <li><a href="#">Zabix</a></li>
+                <li><a href="#">Capistrano</a></li>
+                <li><a href="#">How to use nginx</a></li>
+                <li><a href="#">Unicorn</a></li>
+                <li><a href="#">Apache</a></li>
+              </ul>
+            </li>
+          </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
+   <!--  <nav class="site-nav">
       <div class="trigger">
         {% for page in site.pages %}
           {% if page.title %}
@@ -20,7 +56,7 @@
           {% endif %}
         {% endfor %}
       </div>
-    </nav>
+    </nav> -->
 
   </div>
 
