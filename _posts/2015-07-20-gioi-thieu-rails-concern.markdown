@@ -4,8 +4,8 @@ title:  "Giới thiệu module Rails Concern"
 date:   2015-07-20 00:03:04
 author: Vinh Nguyen
 summary: Giới thiệu về module Concern của Rails. Một module rất đơn giản nhưng đôi khi rất hữu dụng khi refactor các phần code dùng chung của model.
-categories: [Infrastracrue]
-tags: [Unicorn, Apache]
+categories: [Infrastracrue, Web Development]
+tags: [Unicorn, Design pattern]
 ---
 
 Kể từ bản Rails 4, một thư mục mặc định được tạo ra mỗi khi tạo project mới, đó là thư mục concerns. Ta sẽ tìm hiểu về module concern trong bài viết này.
