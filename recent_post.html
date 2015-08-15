@@ -26,7 +26,7 @@ permalink: /recent_post/
 
       {% if forloop.first %}
         <h2>{{this_year}}</h2>
-        <h3 id="{{ this_month }}-{{ this_year }}">{{ this_month }}</h3>
+        <h4 id="{{ this_month }}-{{ this_year }}">{{ this_month }}</h4>
         <ul>
       {% endif %}
       <li>{{ post.date | date: "%b %-d, %Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -36,12 +36,12 @@ permalink: /recent_post/
         {% if this_year != next_year %}
           </ul>
             <h2>{{next_year}}</h2>
-            <h3 id="{{ next_month }}-{{ next_year }}">{{ next_month }}</h3>
+            <h4 id="{{ next_month }}-{{ next_year }}">{{ next_month }}</h4>
         <ul>
           {% else %}
           {% if this_month != next_month %}
         </ul>
-    <h3 id="{{ next_month }}-{{ next_year }}">{{ next_month }}</h3>
+    <h4 id="{{ next_month }}-{{ next_year }}">{{ next_month }}</h4>
   <ul>
         {% endif %}
       {% endif %}

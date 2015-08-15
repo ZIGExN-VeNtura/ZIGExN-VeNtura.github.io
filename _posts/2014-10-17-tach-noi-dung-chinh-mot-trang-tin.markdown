@@ -4,7 +4,7 @@ title:  "Tách nội dung chính của một trang tin tức"
 date:   2014-10-17 23:55:00
 author: Vinh Nguyen
 summary: Trong bài viết này mình xin trình bày một thuật toán để tách nội dung chính của một trang web(tin tức).
-categories: [Ruby on Rails]
+categories: [infrastracrue]
 tags: [Rails API, Zabix]
 ---
 
