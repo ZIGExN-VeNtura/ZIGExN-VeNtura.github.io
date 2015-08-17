@@ -5,10 +5,10 @@ layout: default
   <h1>ZIGExN VeNtura</h1>
   <h1 class="page-heading">Bring Innovation from Vietnam to the World!</h1>
   <div class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <div class="post-item">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - <a href="#">{{ post.author }}</a> - <a href="/categories_articles/#{{ category | first }}">{{post.categories }}</a></span>
-        <img class="img_post" src="http://zigexn.vn/assets/img3-8c42ab41b2419c09a083e9c0b68f2636.jpg" alt="http://zigexn.vn/assets/img3-8c42ab41b2419c09a083e9c0b68f2636.jpg">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - <a href="#">{{ post.author }}</a> - <a href="/categories/{{post.categories }}">{{post.categories }}</a></span>
+        <img class="img_post" src="{{post.images}}" alt="{{post.images}}">
         <h2>
           <br/>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -17,6 +17,7 @@ layout: default
         <div class="btn_readmore"><a href="{{ post.url | prepend: site.baseurl }}"><span class="readmore">Read more »</span></a></div>
       </div>
     {% endfor %}
+    {% include paginator.html %}
   </div>
   <div class="nav-right">
     {% include nav_right.html %}

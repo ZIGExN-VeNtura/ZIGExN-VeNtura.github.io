@@ -2,31 +2,31 @@
 
   <div class="wrapper-header">
 
-    <a class="site-title" href="{{ site.baseurl }}/"><img alt="logo zigexn ventura" class="img-responsive" src="http://recruitment.zigexn.vn/img/logo.png">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/"><img alt="logo zigexn ventura" class="img-responsive" src="http://recruitment.zigexn.vn/img/logo.png"><span>{{ site.title }}</span></a>
     <div class="dropdown">
       <nav>
         <ul class="clearfix">
           <li><a href="/about/">About US</a>
           <li><a href="#">Categories</a>
           <ul>
-            <li><a href="/categories_articles/#ruby on rails">Ruby on Rails</a>
+            <li><a href="/categories/ruby on rails/">Ruby on Rails</a>
               <ul>
               {% for item in site.RoR %}
-                <li><a href="/tags_articles_ror/#{{ item }}">{{ item }}</a></li>
+                <li><a href="/tags/ruby on rails/#{{ item }}">{{ item }}</a></li>
               {% endfor %}
               </ul>
             </li>
-            <li><a href="/categories_articles/#web development">Web Development</a>
+            <li><a href="/categories/web development">Web Development</a>
               <ul>
               {% for item in site.WebDev %}
-                <li><a href="/tags_articles_web/#{{ item }}">{{ item }}</a></li>
+                <li><a href="/tags/web development/#{{ item }}">{{ item }}</a></li>
               {% endfor %}
               </ul>
             </li>
-            <li><a href="/categories_articles/#infrastracrue">Infrastracrue</a>
+            <li><a href="/categories/infrastructure/">Infrastructure</a>
               <ul>
-              {% for item in site.Infrastracrue %}
-                <li><a href="/tags_articles_infrastracrue/#{{ item }}">{{ item }}</a></li>
+              {% for item in site.Infrastructure %}
+                <li><a href="/tags/infrastructure/#{{ item }}">{{ item }}</a></li>
               {% endfor %}
               </ul>
             </li>

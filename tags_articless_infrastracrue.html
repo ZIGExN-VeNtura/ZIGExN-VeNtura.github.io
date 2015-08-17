@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Articles by tag - Infrastracrue
-permalink: /tags_articles_infrastracrue/
+title: Articles by tag - Infrastructure
+permalink: /tags/infrastructure/
 ---
 <div class="post-content_detail">
   <header class="post-header">
         <h1 class="post-title">{{ page.title }}</h1>
   </header>
-<!-- Duyet Infrastracrue -->
-<h2><a href="/categories_articles/#infrastracrue">Infrastracrue</a></h2>
-{% for item in site.Infrastracrue %}
+<!-- Duyet infrastructure -->
+<h2><a href="/categories/infrastructure">Infrastructure</a></h2>
+{% for item in site.Infrastructure %}
   {% for tag in site.tags %}
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
@@ -34,7 +34,7 @@ permalink: /tags_articles_infrastracrue/
   {% endfor %}
  <ul><h4 id="{{ iItem }}">{{ iItem }} - (0)</h4></ul>
 {% endfor %}
-<!-- Duyet Infrastracrue=================== -->
+<!-- Duyet infrastructure=================== -->
 </div>
 
 <div class="nav-right">

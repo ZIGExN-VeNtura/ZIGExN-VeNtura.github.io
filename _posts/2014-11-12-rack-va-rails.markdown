@@ -2,6 +2,7 @@
 layout: post
 title:  "Rails on Rack"
 date:   2014-11-07 23:55:00
+images: http://zigexn.vn/assets/img3-8c42ab41b2419c09a083e9c0b68f2636.jpg"
 author: Vinh Nguyen
 summary: Tiếp theo bài giới thiệu về Ruby Rack trước, bài viết này sẽ đi sâu vào phân tích ứng dụng của Rack trong Rails.
 categories: [Web Development]

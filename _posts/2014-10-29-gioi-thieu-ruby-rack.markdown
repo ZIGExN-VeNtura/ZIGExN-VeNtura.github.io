@@ -2,6 +2,7 @@
 layout: post
 title:  "Giới thiệu Ruby Rack"
 date:   2014-10-29 23:55:00
+images: http://zigexn.vn/assets/img3-8c42ab41b2419c09a083e9c0b68f2636.jpg"
 author: Vinh Nguyen
 summary: Nếu đã từng lập trình web với Ruby, bạn đã làm việc với Rack. Có thể nói Rack chính là nền tảng cho các web framework của Ruby. Từ Sinatra, Rails, đến các framework gần đây như Lotus đều dựa trên nền tảng của Rack. Tìm hiểu về Rack giúp ta có hiểu được cách thức hoạt động của các web framework, từ đó tùy biến chúng dễ dàng hơn.
 categories: [Web Development]
