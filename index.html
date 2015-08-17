@@ -17,7 +17,7 @@ layout: default
           <br/>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <p>{{ post.summary | truncatewords: 50 }}</p>
+        <p>{{ post.summary | truncatewords: 40 }}</p>
         <div class="btn_readmore"><a href="{{ post.url | prepend: site.baseurl }}"><span class="readmore">Read more »</span></a></div>
       </div>
     {% endfor %}
