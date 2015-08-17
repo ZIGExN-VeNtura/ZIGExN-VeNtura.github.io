@@ -19,3 +19,4 @@ WebDev: [Design pattern, Refactaring series, JS Topic, Solr, Lucene, Scrum]
 Infrastructure: [Docker, Zabix, Capistrano, How to use nginx, Unicorn, Apache]
 paginate: 6
 paginate_path: "/page/:num"
+permalink: /:categories/:year/:title

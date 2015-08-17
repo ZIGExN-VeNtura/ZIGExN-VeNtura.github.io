@@ -2,7 +2,7 @@
 layout: post
 title:  "Giới thiệu module Rails Concern"
 date:   2015-07-20 00:03:04
-images: http://zigexn.vn/assets/img3-8c42ab41b2419c09a083e9c0b68f2636.jpg"
+images: http://zigexn.vn/assets/img2-fd5bc08cf3cf07519e51df70a2e0a801.jpg
 summary: Giới thiệu về module Concern của Rails. Một module rất đơn giản nhưng đôi khi rất hữu dụng khi refactor các phần code dùng chung của model.
 categories: [web Development]
 tags: [Unicorn, Design pattern, Zabix]
