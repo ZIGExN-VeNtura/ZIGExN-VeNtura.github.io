@@ -5,7 +5,7 @@ date:   2014-10-29 23:55:00
 images: http://zigexn.vn/assets/img2-fd5bc08cf3cf07519e51df70a2e0a801.jpg
 author: Vinh Nguyen
 summary: Nếu đã từng lập trình web với Ruby, bạn đã làm việc với Rack. Có thể nói Rack chính là nền tảng cho các web framework của Ruby. Từ Sinatra, Rails, đến các framework gần đây như Lotus đều dựa trên nền tảng của Rack. Tìm hiểu về Rack giúp ta có hiểu được cách thức hoạt động của các web framework, từ đó tùy biến chúng dễ dàng hơn.
-categories: [Web Development]
+categories: [Web Development, ruby on rails]
 tags: [How to use nginx, Zabixs]
 ---
 
