@@ -207,5 +207,11 @@ map <Leader>b :e Bowerfile<CR>
 
 Trên đây là cách cài đặt và cấu hình để biến VIM thành 1 IDE toàn diện cho dự án rails. Hi vọng các bạn sẽ cảm thấy hạnh phúc và làm việc hiệu quả hơn với VIM trong những dự án rails sắp tới.
 
+Nguồn tham khảo:
+
+1. Cuốn [Practical VIM](http://www.cs.csubak.edu/~jhernandez/files/PracticalVim.pdf)
+2. [http://vimcasts.org/](http://vimcasts.org/)
+3. [https://github.com/thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)
+
 
 **Lân Nguyễn**
