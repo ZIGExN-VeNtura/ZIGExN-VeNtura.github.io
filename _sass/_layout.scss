@@ -215,7 +215,7 @@
 .post-item {
   border: 1px solid $grey-color-light;
   width: 44%;
-  height: 480px;
+  min-height: 480px;
   float: left;
   margin: 5px;
   padding: 10px;
@@ -539,13 +539,14 @@
     padding:0 10px;
     color:#FFF;
     font-size:16px;
-    line-height: 60px;
+    line-height: 56px;
     text-decoration:none;
   }
 
   /* Background color change on Hover */
   nav a:hover {
     background-color: #4A4646;
+    line-height: 60px;
   }
 
   /* Hide Dropdowns by Default
