@@ -16,7 +16,7 @@ layout: default
             <a href="/categories/{{ category }}"> - {{ category }}</a>
           {% endfor %}
         </span>
-        <img class="img_post" src="{{post.images}}" alt="{{post.images}}">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img class="img_post" src="{{post.images}}" alt="{{post.images}}"></a>
         <h2>
           <br/>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
