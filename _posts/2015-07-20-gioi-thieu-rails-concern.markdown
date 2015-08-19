@@ -2,10 +2,11 @@
 layout: post
 title:  "Giới thiệu module Rails Concern"
 date:   2015-07-20 00:03:04
-images: http://zigexn.vn/assets/img2-fd5bc08cf3cf07519e51df70a2e0a801.jpg
 summary: Giới thiệu về module Concern của Rails. Một module rất đơn giản nhưng đôi khi rất hữu dụng khi refactor các phần code dùng chung của model.
-categories: [web Development]
-tags: [Unicorn, Design pattern, Zabix]
+categories: [ruby on rails]
+tags: [Rails concern]
+images: /images/ruby-on-rails.png
+author: Vinh Nguyen
 ---
 
 Kể từ bản Rails 4, một thư mục mặc định được tạo ra mỗi khi tạo project mới, đó là thư mục concerns. Ta sẽ tìm hiểu về module concern trong bài viết này.

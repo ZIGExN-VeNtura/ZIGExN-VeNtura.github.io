@@ -2,11 +2,11 @@
 layout: post
 title:  "Tách nội dung chính của một trang tin tức"
 date:   2014-10-17 23:55:00
-images: http://zigexn.vn/assets/img3-8c42ab41b2419c09a083e9c0b68f2636.jpg
-author: Vinh Nguyen
 summary: Trong bài viết này mình xin trình bày một thuật toán để tách nội dung chính của một trang web(tin tức).
-categories: [infrastructure]
-tags: [Rails API, Zabix]
+categories: [ruby on rails, web development]
+tags: [""]
+images: /images/SafariReaderActive.png
+author: Vinh Nguyen
 ---
 
 __Vấn đề:__ với một người rất hay đọc báo/blog online như mình, chức năng Reader của Safari rất hữu dụng.
