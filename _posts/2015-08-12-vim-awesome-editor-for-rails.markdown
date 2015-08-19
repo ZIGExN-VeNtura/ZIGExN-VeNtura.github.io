@@ -3,7 +3,10 @@ layout: post
 title:  "VIM - awesome editor for rails"
 date:   2015-08-12 23:55:00
 summary: VIM là 1 công cụ soạn thảo tuyệt vời cho rails. VIM cung cấp khả năng tùy biến cao theo thói quen của người dùng giúp tăng tốc độ soạn thảo cho lập trình viên.
-categories: rails
+categories: [ruby on rails]
+tags: [""]
+images: /images/chimen.png
+author: Lân Nguyễn
 ---
 
 **VIM** là 1 công cụ soạn thảo tuyệt vời cho rails. VIM cung cấp khả năng tùy biến cao theo thói quen của người dùng giúp tăng tốc độ soạn thảo cho lập trình viên. Vì vậy trong bài viết này tôi sẽ hướng dẫn bạn cách biến VIM như 1 IDE thông qua 3 bước đơn giản sau.
@@ -36,7 +39,7 @@ Thao tác trên VIM hoàn toàn sử dụng **bàn phím** thay vì chuột và 
 
 ![VIM Cheatsheet](http://www.viemu.com/vi-vim-cheat-sheet.gif)
 
-  Phần quan trọng nhất khi 1 lập trình viên viết chương trình có lẽ là việc **di chuyển(motion)** giữa các dòng code, giữa các file để đọc hiểu hệ thống và tìm ra vị trí thích hợp nhất để thêm, sửa hoặc xoá. Vì vậy, VIM đã tập trung phần lớn các phím cho việc di chuyển này. Các phím di chuyển được đánh dấu bằng **màu xanh lá cây**. 
+  Phần quan trọng nhất khi 1 lập trình viên viết chương trình có lẽ là việc **di chuyển(motion)** giữa các dòng code, giữa các file để đọc hiểu hệ thống và tìm ra vị trí thích hợp nhất để thêm, sửa hoặc xoá. Vì vậy, VIM đã tập trung phần lớn các phím cho việc di chuyển này. Các phím di chuyển được đánh dấu bằng **màu xanh lá cây**.
 
   Việc di chuyển được thực hiện theo nhiều cấp độ khác nhau:
 

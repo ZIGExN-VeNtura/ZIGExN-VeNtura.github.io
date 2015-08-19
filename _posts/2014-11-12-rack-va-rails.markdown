@@ -3,7 +3,10 @@ layout: post
 title:  "Rails on Rack"
 date:   2014-11-07 23:55:00
 summary: Tiếp theo bài giới thiệu về Ruby Rack trước, bài viết này sẽ đi sâu vào phân tích ứng dụng của Rack trong Rails.
-categories: ruby rails
+categories: [ruby on rails]
+tags: [""]
+images: /images/rack-logo.png
+author: Vinh Nguyen
 ---
 
 Tiếp theo [bài viết trước](http://zinh.github.io/ruby/2014/10/16/gioi-thieu-ruby-rack.html), trong bài này mình sẽ đi sâu vào phân tích ứng dụng của Rack với framework Rails.
@@ -122,10 +125,10 @@ Chính cấu trúc module của Rack middleware giúp ta dễ dàng thêm hoặc
 config.middleware.use(new_middleware, args)
 
 # chèn middleware vào trước một middleware có sẵn
-config.middleware.insert_before(existing_middleware, new_middleware, args) 
+config.middleware.insert_before(existing_middleware, new_middleware, args)
 
 # chèn middleware vào sau một middleware có sẵn
-config.middleware.insert_after(existing_middleware, new_middleware, args) 
+config.middleware.insert_after(existing_middleware, new_middleware, args)
 {% endhighlight %}
 
 Hoặc để xóa một middleware có sẵn ta config như sau(cũng trong file `application.rb`)
