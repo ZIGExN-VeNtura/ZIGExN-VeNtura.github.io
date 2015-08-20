@@ -16,23 +16,27 @@ permalink: /tags/ruby on rails/
     {% capture iTag %}{{ tag | first }}{% endcapture %}
     {% capture iItem %}{{ item }}{% endcapture %}
     {% if iTag == iItem %}
-    <ul>
-      <h4 id="{{ tag | first }}">{{ tag | first }} - ({{ posts | size }})</h4>
-      {% for posts in tag %}
-        <ul>
-          {% for post in posts %}
-            {% if post.title != % %}
-              <li>
-                {{ post.date | date: "%b %-d, %Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% endfor %}
-    </ul>
+      <ul>
+        <h4 id="{{ tag | first }}">{{ tag | first }} - ({{ posts | size }})</h4>
+        {% for posts in tag %}
+          <ul>
+            {% for post in posts %}
+              {% if post.title != % %}
+                <li>
+                  {% capture flag %}{{ iTag }}{% endcapture %}
+                  {{ post.date | date: "%b %-d, %Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </ul>
     {% endif %}
+
   {% endfor %}
- <ul><h4 id="{{ iItem }}">{{ iItem }} - (0)</h4></ul>
+  {% if flag != iItem %}
+    <ul><h4 id="{{ iItem }}">{{ iItem }} - (0)</h4></ul>
+  {% endif %}
 {% endfor %}
 <!-- Duyet RoR=================== -->
 </div>

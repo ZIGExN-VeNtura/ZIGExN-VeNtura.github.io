@@ -23,6 +23,7 @@ permalink: /tags/web development/
           {% for post in posts %}
             {% if post.title != % %}
               <li>
+                {% capture flag %}{{ iTag }}{% endcapture %}
                 {{ post.date | date: "%b %-d, %Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
               </li>
             {% endif %}
@@ -32,7 +33,9 @@ permalink: /tags/web development/
     </ul>
     {% endif %}
   {% endfor %}
- <ul><h4 id="{{ iItem }}">{{ iItem }} - (0)</h4></ul>
+  {% if flag != iItem %}
+    <ul><h4 id="{{ iItem }}">{{ iItem }} - (0)</h4></ul>
+  {% endif %}
 {% endfor %}
 <!-- Duyet Web Development=================== -->
 </div>
