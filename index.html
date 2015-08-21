@@ -11,7 +11,7 @@ layout: default
   <div class="post-list">
     {% for post in paginator.posts %}
       <div class="post-item">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - <a href="#">{{ post.author }}</a>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - {{ post.author }}
           {% for category in post.categories %}
             <a href="/categories/{{ category }}"> - {{ category }}</a>
           {% endfor %}
