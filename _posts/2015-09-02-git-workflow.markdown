@@ -4,34 +4,65 @@ title:  GIT best practice
 date:   2015-09-02 23:55:00
 summary: Ngày nay, trong quá trình làm việc nhóm trong 1 dự án code thì GIT là 1 công cụ không thể thiếu được. GIT giúp từng cá nhân theo dõi, phát triển từng chức năng riêng biệt. Đồng thời, GIT cũng hỗ trợ tốt trong việc làm việc nhóm, giúp hợp nhất các đóng góp của mỗi thành viên trong nhóm
 categories: [web development]
-tags: [""]
-images: 
+tags: ["git"]
+images: /images/socialite.jpg
 author: Lân Nguyễn
 ---
 
-Ngày nay, trong quá trình làm việc nhóm trong 1 dự án code thì **GIT** là 1 công cụ được sử dụng hàng ngày. GIT giúp từng cá nhân theo dõi, phát triển từng chức năng riêng biệt. Đồng thời, GIT cũng hỗ trợ tốt trong việc làm việc nhóm, giúp hợp nhất các đóng góp của mỗi thành viên trong nhóm. Nhưng để sử dụng tốt công cụ tuyệt vời này, chúng ta cũng cần phải tham khảo, thực hành 1 số best practice sau. 
+![GIT COVER](/images/socialite.jpg)
+
+Ngày nay, trong quá trình làm việc nhóm trong 1 dự án code thì **GIT** là 1 công cụ được sử dụng hàng ngày. GIT giúp từng cá nhân theo dõi, phát triển từng chức năng riêng biệt. Đồng thời, GIT cũng hỗ trợ tốt trong việc làm việc nhóm, giúp hợp nhất các đóng góp của mỗi thành viên trong nhóm. Nhưng để sử dụng tốt công cụ tuyệt vời này, tôi xin đưa ra 1 số best practice sau.
 
 
 __1. Khi 1 thành viên phát triển độc lập 1 chức năng__
-Tiêu chuẩn: 
-Mỗi commit nên tập trung làm 1 việc (số lượng file vừa phải)
-Nội dung message rõ ràng không chung chung như "Fix review", "Fix bug"...
+
+- Tiêu chuẩn:
+
+  + Mỗi commit nên tập trung làm 1 việc (số lượng file vừa phải)
+
+  + Nội dung message rõ ràng không chung chung như "Fix review", "Fix bug"...
 
 Thông thường sẽ có 2 thời điểm chúng ta phát hiện cần sửa 1 commit:
 
-Thứ nhất, khi vừa commit xong, ta phát hiện ra còn thiếu file hoặc cần sửa gấp 1 vài đoạn nhỏ trong code (như chưa xóa debugger, chưa đặt method vào vùng private...)
-Cách sửa gấp: 
+  + Thứ nhất, **khi vừa commit xong**, ta phát hiện ra còn thiếu file hoặc cần sửa gấp 1 vài đoạn nhỏ trong code (như chưa xóa debugger, chưa đặt method vào vùng private...)
+Cách sửa gấp:
+ 
   Sửa các file đó
   Add vào repo: git add .
   Thêm file đó vào commit trước đó: git commit --amend. Lệnh này sẽ đưa ra màn hình editor với nội dung gồm commit message của commit trước và các file của commit cũ cộng với các file mới thêm vào. Từ đây ta có thể sửa commit message cũ hoặc không, sau đó sẽ thoát ra. Git sẽ tạo ra 1 commit với id mới bao gồm tất cả các file cũ và mới
 
-Thứ hai, sau 1 thời gian feature branch có rất nhiều commit, chúng ta xem xét lại nếu thấy:
- Một số commit có message chưa rõ nghĩa, cần sửa lại message
- Một số commit quá lớn cần tách ra làm nhiều commit nhỏ hơn
- Một số commit quá nhỏ, có thể gom lại với nhau
- Một số commit không theo đúng thứ tự, cần sắp xếp lại
+  + Thứ hai, sau 1 thời gian feature branch có rất nhiều commit, chúng ta sử dụng git rebase -i (Interactive Rebase) để giải quyết các vấn đề sau:
+![GIT REBASE](/images/rebase.png)
 
-Giải pháp cho tất cả các trường hợp trên là: git rebase -i
+![GIT REBASE](/images/default_rebase.png)
+
+ Một số commit có message chưa rõ nghĩa, cần sửa lại message
+![VIM REBASE REWORD](/images/reword_rebase.png)
+
+ Một số commit quá lớn cần tách ra làm nhiều commit nhỏ hơn
+![VIM REBASE SPLIT](/images/split_rebase.png)
+
+![VIM REBASE SPLIT](/images/split_rebase_1.png)
+
+![VIM REBASE SPLIT](/images/split_rebase_2.png)
+
+![VIM REBASE SPLIT](/images/split_result.png)
+
+ Một số commit quá nhỏ, có thể gom lại với nhau
+![VIM REBASE SQUASH](/images/squash_rebase.png)
+
+![VIM REBASE SQUASH](/images/squash_rebase_1.png)
+
+![VIM REBASE SQUASH](/images/squash_rebase_2.png)
+
+![VIM REBASE SQUASH](/images/squash_rebase_3.png)
+
+![VIM REBASE SQUASH](/images/squash_result.png)
+
+ Một số commit không theo đúng thứ tự, cần sắp xếp lại
+![VIM REBASE REORDER](/images/reorder_rebase.png)
+
+![VIM REBASE REORDER](/images/reorder_result.png)
    
   
 __2. Khi chức năng cần cập nhật từ phần chung khi xảy ra conflict hoặc lấy phần mới từ người khác__
@@ -51,7 +82,7 @@ Có rất nhiều quan điểm cũng như tranh cãi giữa việc sử dụng 2
   Chuyển commit branch chính sang feature branch
   Chuyển các commit từ branch tạm về đỉnh của feature branch
 
-Vậy git rebase sẽ re-commit các commit cũ, sắp xếp các commit theo thứ tự merge vào branch chính, đồng thời sẽ không tạo ra commit mới
+Vậy git rebase sẽ re-commit các commit cũ, sắp xếp các commit theo thứ tự merge vào branch chính, đồng thời sẽ không tạo ra commit mới (vì merge commit thì rất là tệ, gây rối loạn pullrequest)
   Để đồng bộ với remote: git push origin feature_branch -f. Option -f mang nghĩa là ép buộc server phải sync với local vì các commit cũ đã thay đổi sang id mới
 
 Một câu hỏi đặt ra: Khi nào dùng rebase và merge?
