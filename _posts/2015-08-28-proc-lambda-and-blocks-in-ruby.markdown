@@ -3,6 +3,7 @@ layout: post
 title:  "Proc, Lambda và Block in Ruby"
 date:   2015-08-27
 summary: Hôm nay tôi xin giới thiệu về Anonymous Functions như là Proc, Lambda, Blocks để thấy rõ về tính Callable và Runable của Objects trong Ruby.
+description: Hôm nay tôi xin giới thiệu về Anonymous Functions như là Proc, Lambda, Blocks để thấy rõ về tính Callable và Runable của Objects trong Ruby.
 categories: [ruby on rails]
 tags: [""]
 images: /images/block-proc-lambda.jpg

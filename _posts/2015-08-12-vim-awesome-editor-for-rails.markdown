@@ -3,6 +3,7 @@ layout: post
 title:  "VIM - awesome editor for rails"
 date:   2015-08-12 23:55:00
 summary: VIM là 1 công cụ soạn thảo tuyệt vời cho rails. VIM cung cấp khả năng tùy biến cao theo thói quen của người dùng giúp tăng tốc độ soạn thảo cho lập trình viên.
+description: VIM là 1 công cụ soạn thảo tuyệt vời cho rails. VIM cung cấp khả năng tùy biến cao theo thói quen của người dùng giúp tăng tốc độ soạn thảo cho lập trình viên.
 categories: [ruby on rails]
 tags: [""]
 images: /images/chimen.png
