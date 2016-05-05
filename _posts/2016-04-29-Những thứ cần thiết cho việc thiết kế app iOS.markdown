@@ -5,6 +5,7 @@ date:   2016-04-29 23:55:00
 summary: Trong bài viết này mình sẽ tóm tắt một vài thông số cơ bản của các element iOS và những điểm cần lưu ý khi thiết kế ứng dụng.
 categories: [web development]
 tags: ["iOS"]
+images: /images/ios_image_top.png
 author: ThaoNNM
 ---
 Trước khi bạn bắt đầu thiết kế, hãy xem qua [Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/index.html?utm_source=twitterfeed&utm_medium=twitter) cho iOS - gọi tắt là [HIG](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/index.html?utm_source=twitterfeed&utm_medium=twitter) - của Apple để chắc chắn mình sẽ không vi phạm bất kỳ nguyên tắc cơ bản áp dụng cho việc thiết kế.
