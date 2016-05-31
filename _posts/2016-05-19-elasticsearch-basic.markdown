@@ -9,7 +9,7 @@ images: /images/elasticsearch-rails.jpg
 author: KhieuLQ
 ---
 
-Hướng dẫn sử dụng elasticsearch với Ruby On Rails.
+Hướng dẫn sử dụng elasticsearch với Ruby On Rails
 
 ## 1) Cài đặt elasticsearch
 Làm theo hướng dẫn tại trang chủ của [elasticsearch](https://www.elastic.co/downloads/elasticsearch)
@@ -31,52 +31,38 @@ Chú ý:
 
 ## 3) Tương tác với elasticsearch
 
-Gỉa sử bạn có các model sau:
+Giả sử bạn có các model sau:
 
 Book
 
 - id: integer
-
 - title: text (search field)
-
 - content: text (search field)
-
 - author_id: integer
-
 - note: text
-
 - created_at: datetime
-
 - update_at: datetime
 
 Author
 
 - id: integer
-
 - name: text (search field)
-
 - created_at: datetime
-
 - update_at: datetime
 
 ### Step 1: tạo mapping
 
 ```
-
 book.rb
-
 ...
 
 # enable elasticsearch on this model
-
 include Elasticsearch::Model
 
 # set name of index
-
 index_name [Rails.application.engine_name, Rails.env].join('_')
 
 # we use 1 shard for 1 node
-
 settings index: { number_of_shards: 1 } do
   # create mapping
   mappings  do
@@ -89,7 +75,6 @@ settings index: { number_of_shards: 1 } do
 end
 
 # adust data format to index
-
   def as_indexed_json(options={})
     as_json(
       only: [:title, :content],
@@ -149,6 +134,7 @@ book.note
 ```
 
 ## 4) Bonus
+
 ### Bạn có thể overwrite method search mặc định của gem elasticsearch
 Ví dụ
 
