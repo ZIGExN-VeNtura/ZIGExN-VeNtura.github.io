@@ -17,11 +17,11 @@ Làm theo hướng dẫn tại trang chủ của [elasticsearch](https://www.ela
 ## 2) Cài đặt gem hỗ trợ tương tác với elasticsearch
 Bổ sung vào Gemfile:
 
-```
+{% highlight ruby %}
 gem 'elasticsearch', git: 'git://github.com/elasticsearch/elasticsearch-ruby.git'
 gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
 gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
-```
+{% endhighlight %}
 
 Chú ý:
 
@@ -52,7 +52,7 @@ Author
 
 ### Step 1: tạo mapping
 
-```
+{% highlight ruby %}
 book.rb
 ...
 
@@ -81,7 +81,7 @@ end
       include: { authors: {only: :name} }
     )
   end
-```
+{% endhighlight %}
 
 ### Step 2: index data
 
@@ -89,56 +89,56 @@ Chạy lệnh sau trong rails console
 
 Tạo index
 
-```
+{% highlight ruby %}
 Book.__elasticsearch__.create_index!
-```
+{% endhighlight %}
 
 Index data
 
-```
+{% highlight ruby %}
 Book.import
-```
+{% endhighlight %}
 
 Để rails tự động add, update, delete index của model Book, bạn add dòng lệnh sau vào book.rb
 
-```
+{% highlight ruby %}
 book.rb
 ...
 
 include Elasticsearch::Model::Callbacks
-```
+{% endhighlight %}
 
 ### Step 3: tìm kiếm
-Thử tìm kiếm trong rails console
+Tìm kiếm trong rails console
 
-```
+{% highlight ruby %}
 books = Book.search('search text')
 books.class
 => Elasticsearch::Model::Response::Response
-```
+{% endhighlight %}
 
 Sử dụng kết quả tìm kiếm không thông qua db (nhanh, chỉ có thông tin đã được index trong elasticsearch)
 
-```
+{% highlight ruby %}
 books = Book.search('search text').results
 book = books[0]._source
 book.content
-```
+{% endhighlight %}
 
 Sử dụng kết quả tìm kiếm thông qua db (chậm hơn do phải truy xuất từ db, đầy đủ thông tin)
 
-```
+{% highlight ruby %}
 books = Book.search('search text').records
 book = books.where('created_at > ?', 3.day.ago).first
 book.note
-```
+{% endhighlight %}
 
 ## 4) Bonus
 
 ### Bạn có thể overwrite method search mặc định của gem elasticsearch
 Ví dụ
 
-```
+{% highlight ruby %}
 book.rb
 ...
 
@@ -166,4 +166,4 @@ def self.search(_query)
   }
   __elasticsearch__.search query
 end
-```
+{% endhighlight %}
