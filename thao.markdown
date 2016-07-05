@@ -68,11 +68,11 @@ Sóng nước, cánh hoa anh đào, hình xoắn ốc,  họa tiết bàn cờ,.
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/pattern1.jpg)
  
 http://japanese-pattern.info/
-Webiste này không chỉ cung cấp những họa tiết truyền thống Nhật, mà có những họa tiết chấm bi, họa tiết paisley ...
+Webiste này không chỉ cung cấp những họa tiết truyền thống Nhật, mà có cả những họa tiết chấm bi, họa tiết paisley ...
 
 ##### 3.Illustrators
 
-Trong design Nhật truyền thống, hình minh họa rất hay được sử dụng. Đa phần trong số đó là hình ảnh của tự nhiên hoa, cây lá hay là  một nhân vật nào đó ...là những đối tượng chính sử dụng  trong tranh màu nước hay tranh sơn dầu... Những mẫu họa tiết trên kimono Nhật là phù hợp với design Nhật truyền thống.
+Trong design Nhật truyền thống, hình minh họa rất hay được sử dụng. Đa phần trong số đó là hình ảnh của tự nhiên hoa, cây lá hay là  một nhân vật nào đó ...là những đối tượng chính sử dụng  trong tranh màu nước hay tranh sơn dầu... Những mẫu họa tiết trên kimono Nhật rất thích hợp với design Nhật truyền thống.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/hokusai.jpg)
 
@@ -82,48 +82,41 @@ Một số link download tham khảo
 http://www.wafusozai.com/
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/illutration1.jpg)
 
-http://www.silhouette-ac.com/category.html?sw=%E5%92%8C%E9%A2%A8
-![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/illutration2.jpg)
-
 ##### 4. Font chữ 
 
-Trong website design kiểu Nhật truyền thống, font Mincho rất hay được sử dung. Font Mincho là font chữ từ Trung Quốc truyền vào, và được sử dụng phổ biến tại Nhật. Được yêu thích từ xưa nên rất hợp với design truyền thống Nhật. Mouhitsu Bold Font là font chữ như được viết bằng bút lông cũng khá phổ biến.
+Trong website design kiểu Nhật truyền thống, font Mincho hay được sử dung. Font Mincho là font chữ từ Trung Quốc truyền vào, và được sử dụng phổ biến tại Nhật. Được yêu thích từ xưa nên rất hợp với design truyền thống Nhật. Mouhitsu Bold Font là font chữ như được viết bằng bút lông cũng khá phổ biến.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/honoka.jpg)
-
 Honoka Mincho
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/kokoro.png)
-
 Kokoro Minchotai
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/hannari.png)
-
 Hannari Mincho
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/utsukushi.png)
-
 really scary Minchotai
 
 
 ##### Các example website về phong cách Nhật truyền thống.
 
 Đẹp mê mẩn trên từng hoạ tiết trên màu nền background.
-
+![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design1.jpg)
 http://www.hishiken.co.jp/
 
 Tổng thể gam màu trầm hợp nhất
-
+![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design4.jpg)
 http://tsuzuri.kyo-bunka.or.jp/tsuzuri/
 
 Hình ảnh minh hoạ trở thành điểm nhấn chính
 
 http://www.nori-fukui.co.jp/index.php
-
+![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design5.jpg)
 Chú trọng phần ảnh chụp, phối màu dịu.
 
 http://hanayomewakon.jp/
-
+![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design8.jpg)
 http://www.webcreatorbox.com/inspiration/japanese-web-design/
 
 (Dịch từ Resoure from http://www.webcreatorbox.com/inspiration/japanese-web-design/)
