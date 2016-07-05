@@ -110,14 +110,15 @@ Tổng thể gam màu trầm hợp nhất
 http://tsuzuri.kyo-bunka.or.jp/tsuzuri/
 
 Hình ảnh minh hoạ trở thành điểm nhấn chính
+![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design5.jpg)
 
 http://www.nori-fukui.co.jp/index.php
-![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design5.jpg)
-Chú trọng phần ảnh chụp, phối màu dịu.
 
-http://hanayomewakon.jp/
+Chú trọng phần ảnh chụp, phối màu dịu.
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design8.jpg)
-http://www.webcreatorbox.com/inspiration/japanese-web-design/
+http://hanayomewakon.jp/
+
+
 
 (Dịch từ Resoure from http://www.webcreatorbox.com/inspiration/japanese-web-design/)
 
