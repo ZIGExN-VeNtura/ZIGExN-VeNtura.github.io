@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "Giới thiệu design Nhật"
+date:   2016-07-05
+summary: Dịch từ một bài viết hay giới thiệu về design Nhật truyền thống
+categories: [design]
+tags: ["design"]
+author: Thao Phan
+---
+
 ##### TỔNG HỢP VÀ MINH HỌA NHỮNG CHẤT LIỆU VÀ NHỮNG ĐIỂM QUAN TRỌNG TRONG THIẾT KẾ WEB DESIGN KIỂU NHẬT TRUYỀN THỐNG
 
 
@@ -63,7 +73,7 @@ Bên dưới, là một số ý tưởng phối màu tương thích với phong 
 #AF736B, #FF9E73, #FCE1B4, #9EB394, #1E3835
 ##### 2. Những họa tiết Nhật truyền thống
 
-Sóng nước, cánh hoa anh đào, hình xoắn ốc,  họa tiết bàn cờ,..hay có những họa tiết độc đáo được được ưa chuộng từ xưa đến nay.
+Sóng nước, cánh hoa anh đào, hình xoắn ốc,  họa tiết bàn cờ,..hay có những họa tiết độc đáo được ưa chuộng từ xưa đến nay.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/pattern1.jpg)
  
@@ -72,7 +82,7 @@ Webiste này không chỉ cung cấp những họa tiết truyền thống Nhậ
 
 ##### 3.Illustrators
 
-Trong design Nhật truyền thống, hình minh họa rất hay được sử dụng. Đa phần trong số đó là hình ảnh của tự nhiên hoa, cây lá hay là  một nhân vật nào đó ...là những đối tượng chính sử dụng  trong tranh màu nước hay tranh sơn dầu... Những mẫu họa tiết trên kimono Nhật rất thích hợp với design Nhật truyền thống.
+Trong design Nhật truyền thống, hình minh họa rất hay được sử dụng. Đa phần trong số đó là hình ảnh của tự nhiên như hoa, cây lá hay là  một nhân vật nào đó ...là những đối tượng chính sử dụng  trong tranh màu nước hay tranh sơn dầu... Những mẫu họa tiết trên kimono Nhật rất thích hợp với design Nhật truyền thống.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/hokusai.jpg)
 
@@ -87,16 +97,16 @@ http://www.wafusozai.com/
 Trong website design kiểu Nhật truyền thống, font Mincho hay được sử dung. Font Mincho là font chữ từ Trung Quốc truyền vào, và được sử dụng phổ biến tại Nhật. Được yêu thích từ xưa nên rất hợp với design truyền thống Nhật. Mouhitsu Bold Font là font chữ như được viết bằng bút lông cũng khá phổ biến.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/honoka.jpg)
-Honoka Mincho
+>Honoka Mincho
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/kokoro.png)
-Kokoro Minchotai
+>Kokoro Minchotai
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/hannari.png)
-Hannari Mincho
+>Hannari Mincho
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/utsukushi.png)
-really scary Minchotai
+>really scary Minchotai
 
 
 ##### Các example website về phong cách Nhật truyền thống.
