@@ -8,7 +8,7 @@ tags: ["design"]
 author: Thao Phan
 ---
 
-##### TỔNG HỢP VÀ MINH HỌA NHỮNG CHẤT LIỆU VÀ NHỮNG ĐIỂM QUAN TRỌNG TRONG THIẾT KẾ WEB DESIGN  NHẬT TRUYỀN THỐNG
+#TỔNG HỢP VÀ MINH HỌA NHỮNG CHẤT LIỆU VÀ NHỮNG ĐIỂM QUAN TRỌNG TRONG THIẾT KẾ WEB DESIGN  NHẬT TRUYỀN THỐNG
 
 
 Đây là một bài viết của một người bị thu hút bởi vẻ đẹp của design và không khí Nhật truyền thống.
@@ -16,7 +16,7 @@ Sự thu hút đến từ cách phối màu truyền thống, bố cục, font c
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/thumb_wa.jpg)
 
-##### 1. Phối màu
+##1. Phối màu
 Cái gì làm chúng ta gợi nhớ đến design Nhật truyền thống? Có lẽ không ít người hình dung đó không phải là màu hồng chói hay màu trắng trong suốt, mà là tổng hòa những gam màu hơi trầm, dịu. Ở Nhật, có những màu sắc & cách phối màu mang tính truyền thống, nếu sử dụng chúng ngọt ngào, bạn sẽ tiến rất gần đến design mang phong cach Nhật truyền thống.
 
 ※ Bảng màu truyền thống
@@ -71,7 +71,7 @@ Bên dưới, là một số ý tưởng phối màu tương thích với phong 
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/colour10.png)
 #AF736B, #FF9E73, #FCE1B4, #9EB394, #1E3835
-##### 2. Những họa tiết Nhật truyền thống
+##2. Những họa tiết Nhật truyền thống
 
 Sóng nước, cánh hoa anh đào, hình xoắn ốc,  họa tiết bàn cờ,..hay có những họa tiết độc đáo được ưa chuộng từ xưa đến nay.
 
@@ -80,7 +80,7 @@ Sóng nước, cánh hoa anh đào, hình xoắn ốc,  họa tiết bàn cờ,.
 http://japanese-pattern.info/
 Webiste này không chỉ cung cấp những họa tiết truyền thống Nhật, mà có cả những họa tiết chấm bi, họa tiết paisley ...
 
-##### 3.Illustrators
+##3.Illustrators
 
 Trong design Nhật truyền thống, hình minh họa rất hay được sử dụng. Đa phần trong số đó là hình ảnh của tự nhiên như hoa, cây lá hay là  một nhân vật nào đó ...là những đối tượng chính sử dụng  trong tranh màu nước hay tranh sơn dầu... Những mẫu họa tiết trên kimono Nhật rất thích hợp với design Nhật truyền thống.
 
@@ -92,7 +92,7 @@ Một số link download tham khảo
 http://www.wafusozai.com/
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/illutration1.jpg)
 
-##### 4. Font chữ 
+##4. Font chữ 
 
 Trong website design kiểu Nhật truyền thống, font Mincho hay được sử dung. Font Mincho là font chữ từ Trung Quốc truyền vào, và được sử dụng phổ biến tại Nhật. Được yêu thích từ xưa nên rất hợp với design truyền thống Nhật. Mouhitsu Bold Font là font chữ như được viết bằng bút lông cũng khá phổ biến.
 
