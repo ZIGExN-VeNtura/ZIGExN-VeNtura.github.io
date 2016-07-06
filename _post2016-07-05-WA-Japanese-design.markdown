@@ -2,13 +2,13 @@
 layout: post
 title:  "Giới thiệu design Nhật"
 date:   2016-07-05
-summary: Dịch từ một bài viết hay giới thiệu về design Nhật truyền thống
+summary: Dịch từ một bài viết hay giới thiệu về Web design  Nhật truyền thống
 categories: [design]
 tags: ["design"]
 author: Thao Phan
 ---
 
-##### TỔNG HỢP VÀ MINH HỌA NHỮNG CHẤT LIỆU VÀ NHỮNG ĐIỂM QUAN TRỌNG TRONG THIẾT KẾ WEB DESIGN KIỂU NHẬT TRUYỀN THỐNG
+##### TỔNG HỢP VÀ MINH HỌA NHỮNG CHẤT LIỆU VÀ NHỮNG ĐIỂM QUAN TRỌNG TRONG THIẾT KẾ WEB DESIGN  NHẬT TRUYỀN THỐNG
 
 
 Đây là một bài viết của một người bị thu hút bởi vẻ đẹp của design và không khí Nhật truyền thống.
