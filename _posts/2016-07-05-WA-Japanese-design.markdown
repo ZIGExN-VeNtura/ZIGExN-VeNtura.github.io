@@ -5,6 +5,7 @@ date:   2016-07-05
 summary: Dịch từ một bài viết hay giới thiệu về Web design  Nhật truyền thống
 categories: [design]
 tags: ["design"]
+images: /images/thumb_wa.jpg
 author: Thao Phan
 ---
 
@@ -97,19 +98,23 @@ http://www.wafusozai.com/
 Trong website design kiểu Nhật truyền thống, font Mincho hay được sử dung. Font Mincho là font chữ từ Trung Quốc truyền vào, và được sử dụng phổ biến tại Nhật. Được yêu thích từ xưa nên rất hợp với design truyền thống Nhật. Mouhitsu Bold Font là font chữ như được viết bằng bút lông cũng khá phổ biến.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/honoka.jpg)
->Honoka Mincho
+
+> Honoka Mincho
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/kokoro.png)
->Kokoro Minchotai
+
+> Kokoro Minchotai
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/hannari.png)
+
 >Hannari Mincho
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/utsukushi.png)
+
 >really scary Minchotai
 
 
-##### Các example website về phong cách Nhật truyền thống.
+### Các example website về phong cách Nhật truyền thống.
 
 Đẹp mê mẩn trên từng hoạ tiết trên màu nền background.
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design1.jpg)
