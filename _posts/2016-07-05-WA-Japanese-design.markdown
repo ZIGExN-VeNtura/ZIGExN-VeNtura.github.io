@@ -113,7 +113,7 @@ Trong Web design phong cách Nhật, font Mincho hay được sử dung. Font Mi
 > really scary Minchotai
 
 
-### Các example website về phong cách Nhật phong cách Nhật .
+### Các example website về phong cách Nhật
 
 Đẹp mê mẩn trên từng hoạ tiết trên màu nền background.
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design1.jpg)
@@ -125,7 +125,7 @@ Tổng thể gam màu trầm hợp nhất
 
 Hình ảnh minh hoạ trở thành điểm nhấn chính
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design5.jpg)
-[http://www.nori-fukui.co.jp/index.php](http://www.nori-fukui.co.jp/index.php>){:rel="nofollow"}
+[http://www.nori-fukui.co.jp/index.php](http://www.nori-fukui.co.jp/index.php){:rel="nofollow"}
 
 
 Chú trọng phần ảnh chụp, phối màu dịu.
