@@ -33,12 +33,12 @@ Japanese Color combination KASANE là cách phối màu chồng nhiều lớp c�
  
 Giới thiệu bên dưới là tự điển mã màu theo cách phối Japanese color combination KASANE.
 
-[http://www.colordic.org/w](http://www.colordic.org/w/){:rel=nofollow}
+[http://www.colordic.org/w](http://www.colordic.org/w/){:rel="nofollow"}
 
 ※Ý  tưởng phối màu
 
 Từ website COLOURlovers, có một số cách phối màu phù hợp với phong cách design Nhật ...
-[http://www.colourlovers.com](http://www.colourlovers.com/){:rel=nofollow}
+[http://www.colourlovers.com](http://www.colourlovers.com/){:rel="nofollow"}
 Bên dưới, là một số ý tưởng phối màu tương thích với phong cách design Nhật.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/colour1.png)
@@ -77,7 +77,7 @@ Sóng nước, cánh hoa anh đào, hình xoắn ốc,  họa tiết bàn cờ,.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/pattern1.jpg)
  
-[http://japanese-pattern.info](http://japanese-pattern.info/){:rel=nofollow}
+[http://japanese-pattern.info](http://japanese-pattern.info/){:rel="nofollow"}
 Webiste này không chỉ cung cấp những họa tiết truyền thống, mà có cả những họa tiết chấm bi, họa tiết paisley ...
 
 ## 3.Illustrators
@@ -86,10 +86,10 @@ Trong phong cách design Nhật, hình minh họa rất hay được sử dụng
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/hokusai.jpg)
 
-website [http://www.hokusai.gr.jp](http://www.hokusai.gr.jp/){:rel=nofollow} để toàn giao diện tranh của Hokusai. Thể hiện thế giới quan độc đáo trên Website. Phối màu và texture rất hòa hợp.
+website [http://www.hokusai.gr.jp](http://www.hokusai.gr.jp/){:rel="nofollow"} để toàn giao diện tranh của Hokusai. Thể hiện thế giới quan độc đáo trên Website. Phối màu và texture rất hòa hợp.
 
 Một số link download tham khảo
-[http://www.wafusozai.com](http://www.wafusozai.com/){:rel=nofollow}
+[http://www.wafusozai.com](http://www.wafusozai.com/){:rel="nofollow"}
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/illutration1.jpg)
 
 ## 4. Font chữ 
@@ -117,21 +117,21 @@ Trong Web design phong cách Nhật, font Mincho hay được sử dung. Font Mi
 
 Đẹp mê mẩn trên từng hoạ tiết trên màu nền background.
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design1.jpg)
-[hishiken.co.jp](http://www.hishiken.co.jp/>){:rel=nofollow}
+[hishiken.co.jp](http://www.hishiken.co.jp/>){:rel="nofollow"}
 
 Tổng thể gam màu trầm hợp nhất
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design4.jpg)
-[http://tsuzuri.kyo-bunka.or.jp/tsuzuri](http://tsuzuri.kyo-bunka.or.jp/tsuzuri/>){:rel=nofollow}
+[http://tsuzuri.kyo-bunka.or.jp/tsuzuri](http://tsuzuri.kyo-bunka.or.jp/tsuzuri/>){:rel="nofollow"}
 
 Hình ảnh minh hoạ trở thành điểm nhấn chính
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design5.jpg)
-[http://www.nori-fukui.co.jp/index.php](http://www.nori-fukui.co.jp/index.php>){:rel=nofollow}
+[http://www.nori-fukui.co.jp/index.php](http://www.nori-fukui.co.jp/index.php>){:rel="nofollow"}
 
 
 Chú trọng phần ảnh chụp, phối màu dịu.
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/design8.jpg)
-[http://hanayomewakon.jp](http://hanayomewakon.jp/){:rel=nofollow}
+[http://hanayomewakon.jp](http://hanayomewakon.jp/){:rel="nofollow"}
 
 (Dịch từ Resoure from [http://www.webcreatorbox.com/inspiration/japanese-web-design/
 ](http://www.webcreatorbox.com/inspiration/japanese-web-design/
-){:rel=nofollow})
+){:rel="nofollow"})
