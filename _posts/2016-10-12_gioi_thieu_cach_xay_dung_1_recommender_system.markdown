@@ -62,13 +62,11 @@ Phương pháp dựa trên mô tả về những những item với user profile
     | Sở thích của user u     | 2.5 | 0  | 0.8 |.....|
     | Sở thích của user u'     | 2.5 | 0.1  | 0.7 |.....|
 
-    Rating<Lu, Rv> = (0.3 * 2.5 + 0.01 * 0 + 1.5 * 0.8) 
+    Rating(Lu, Rv) = (0.3 * 2.5 + 0.01 * 0 + 1.5 * 0.8) 
 
-    Rating<Lu', Rv> = (0.3 * 2.5 + 0.1 * 0.01 + 1.5 * 0.7)
+    Rating(Lu', Rv) = (0.3 * 2.5 + 0.1 * 0.01 + 1.5 * 0.7)
 
-    Chúng ta có thể dễ dàng thấy rằng nếu trong quá khư user u thích  phim Rv thì có khả năng user Lu' cũng sẽ thích phim có 
-
-    tính chất tương tự như Rv.
+    Chúng ta có thể dễ dàng thấy rằng nếu trong quá khư user u thích  phim Rv thì có khả năng user Lu' cũng sẽ thích phim có tính chất tương tự như Rv.
 
 - Item-Item collaborative filtering
 <p>
