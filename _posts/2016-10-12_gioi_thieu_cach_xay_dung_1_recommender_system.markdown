@@ -54,7 +54,7 @@ Phương pháp dựa trên mô tả về những những item với user profile
     **Xapian** http://xapian.org/.
 
 - User-User collaborative filtering
-Được biết đến như k-NN collaborative filtering, core của giải thuật này chính là tìm những user có rating behavior tương tự trong quá khứ với user và user ratings hiện tại để tiên đoán những item tiếp theo mà user hiện tại có khả năng thích. Giả sử chúng ta có thể mô tả d topics cho mỗi user và movie. Tập phim đó có bao nhiêu% lãng mạng, hài hước, hành động. Và how much user thích nó với.
+Được biết đến như k-NN collaborative filtering, core của giải thuật này chính là tìm những user có rating behavior tương tự trong quá khứ với user hiện tại để tiên đoán những item tiếp theo mà user hiện tại có khả năng thích. Giả sử chúng ta có thể mô tả d topics cho mỗi user và movie. Tập phim đó có bao nhiêu% lãng mạng, hài hước, hành động. Và how much user thích nó với.
 
     |         | action           | romance | drama  |.....|
     | ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
