@@ -103,15 +103,15 @@ Sau khi có được vector rating của user trên tất cả cả tập phim t
 
 ### Result:
 
-   Data: https://github.com/quangvinh0513/movie_recommender_app1/tree/master/app/models/import/recommender_system/movie_data
+- Data: https://github.com/quangvinh0513/movie_recommender_app1/tree/master/app/models/import/recommender_system/movie_data
 
-   App demo: https://github.com/quangvinh0513/movie_recommender_app1
+- App demo: https://github.com/quangvinh0513/movie_recommender_app1
 
-   Result Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/avr_g.json
+- Result Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/avr_g.json
 
-   Test Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/test.txt
+- Test Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/test.txt
 
-   Mean Squared Error trên test data của Movielen là 1.23 .
+- Mean Squared Error trên test data của Movielen là 1.23 .
 
 ### Kết luận:
 Recommender systems là một technology giúp trích xúc những thông tin quan trọng từ user databases. Những system này giúp người dùng tìm những items mà học muốn mua 1 cách dễ dàng từ một business model và giúp tăng doanh thu cho doanh nghiệp. Ngày nay Recommender System đang trở nên vô cùng quan trọng bởi vì lượng dữ liệu của người dùng ngày càng tăng trên website cho nên việc xây dựng những recommender system là vô cùng cần thiết.
