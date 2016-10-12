@@ -42,7 +42,6 @@ Phương pháp dựa trên mô tả về những những item với user profile
    https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
 
  - **Tools for a content-based filtering:**
- - Để tránh mất thời gian chúng ta thường dùng search tools dưới đây để implement content-based filtering.
 
     **Apache Lucene** http://lucene.apache.org/ .
 
