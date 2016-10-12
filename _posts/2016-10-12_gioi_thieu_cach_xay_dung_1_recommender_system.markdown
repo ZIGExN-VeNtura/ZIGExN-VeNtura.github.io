@@ -99,6 +99,7 @@ https://en.wikipedia.org/wiki/K-means_clustering
 https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
 
 ### Result:
+
 Data: https://github.com/quangvinh0513/movie_recommender_app1/tree/master/app/models/import/recommender_system/movie_data
 App demo: https://github.com/quangvinh0513/movie_recommender_app1
 Result Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/avr_g.json
