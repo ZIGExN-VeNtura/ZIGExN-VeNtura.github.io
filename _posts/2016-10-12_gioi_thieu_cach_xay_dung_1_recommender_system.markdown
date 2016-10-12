@@ -5,10 +5,10 @@
  summary: Bài viết giới thiệu phương pháp xây dựng Recommender System
  categories: [MachineLearning]
  tags: ["MachineLearning"]
- images: http://blog.soton.ac.uk/hive/files/2012/05/recsys-data2.jpg
+ images: http://bigdata.ices.utexas.edu/wp-content/uploads/2014/03/pmf-banner.png
  author: Vinh Quang Nguyen 
 ---
-![solr](http://blog.soton.ac.uk/hive/files/2012/05/recsys-data2.jpg)
+   ![solr](http://bigdata.ices.utexas.edu/wp-content/uploads/2014/03/pmf-banner.png)
 
 Là 1 tập hợp những thông tin con của hệ thống, những thông tin con này được dung để tiên đoán được sở thích, rating của user trên những sản phẩm. Recommender System đã trở nên rất phổ biến trong những năm gần đây, và được sử dụng trong một loạt các lĩnh vực:. một số ứng dụng phổ biến bao gồm phim ảnh, âm nhạc, tin tức, sách, các bài báo nghiên cứu, các truy vấn tìm kiếm, thẻ xã hội, nhà hàng, dịch vụ tài chính, bảo hiểm nhân thọ, hẹn hò trực tuyến.
 
@@ -63,9 +63,12 @@ Phương pháp dựa trên mô tả về những những item với user profile
     | Sở thích của user u'     | 2.5 | 0.1  | 0.7 |.....|
 
 Rating<Lu, Rv> = (0.3 * 2.5 + 0.01 * 0 + 1.5 * 0.8) 
+
 Rating<Lu', Rv> = (0.3 * 2.5 + 0.1 * 0.01 + 1.5 * 0.7)
 
-Chúng ta có thể dễ dàng thấy rằng nếu trong quá khư user u thích  phim Rv thì có khả năng user Lu' cũng sẽ thích phim có tính chất tương tự như Rv.
+Chúng ta có thể dễ dàng thấy rằng nếu trong quá khư user u thích  phim Rv thì có khả năng user Lu' cũng sẽ thích phim có 
+
+tính chất tương tự như Rv.
 
 - Item-Item collaborative filtering
 <p>
