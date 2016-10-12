@@ -19,48 +19,49 @@ Phương pháp dựa trên mô tả về những những item với user profile
   <img src="https://cloud.githubusercontent.com/assets/6763141/19277707/d999a4c0-9004-11e6-9456-18e2207003a0.png?raw=true" alt="No Picture"/>
 </p>
 
-**Term Frequency cho 1 documents:**
+ - **Term Frequency cho 1 documents:**
 
-| A        | Ruby           | .....  | Rails  |.....|The|......|
-| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
-| 18      | 12 |  | 12 |.....|25|   |
-**Inverse Document Frequency trên tất cả các documents:**
+    | A        | Ruby           | .....  | Rails  |.....|The|......|
+    | ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
+    | 18      | 12 |  | 12 |.....|25|   |
+ - **Inverse Document Frequency trên tất cả các documents:**
 
-| A        | Ruby           | .....  | Rails  |.....|The|......|
-| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
-| log(64/(1 + 63))=0      | Log(64/(1 + 3)) = Log(18)|    | log(64/(1 + 3)) = Log(18) |.....|log(64/(1 + 63))=0|   |
+    | A        | Ruby           | .....  | Rails  |.....|The|......|
+    | ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
+    | log(64/(1 + 63))=0      | Log(64/(1 + 3)) = Log(18)|    | log(64/(1 + 3)) = Log(18) |.....|log(64/(1 + 63))=0|   |
 
-**TF-IDF:**
+ - **TF-IDF:**
 
-| A        | Ruby           | .....  | Rails  |.....|The|......|
-| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
-| 0      | 12 * Log(18) |  | 12 * Log(18) |.....|0|   |
+    | A        | Ruby           | .....  | Rails  |.....|The|......|
+    | ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
+    | 0      | 12 * Log(18) |  | 12 * Log(18) |.....|0|   |
 
-Chúng ta thấy rằng trong 64 docs đều có từ "the, a" cho nên những từ này là common words tf-idf=0 và keywords "rails, ruby" tần số xuất hiện hợp lý tf-idf # 0.
+ - Chúng ta thấy rằng trong 64 docs đều có từ "the, a" cho nên những từ này là common words tf-idf=0 và keywords "rails, ruby" tần số xuất hiện hợp lý tf-idf # 0.
 
-**References:**
-https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+ - **References:**
+   https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
 
-**Tools for a content-based filtering:**
-Để tránh mất thời gian chúng ta thường dùng search tools dưới đây để implement content-based filtering.
+ - **Tools for a content-based filtering:**
+ - Để tránh mất thời gian chúng ta thường dùng search tools dưới đây để implement content-based filtering.
 
-**Apache Lucene** http://lucene.apache.org/ .
+    **Apache Lucene** http://lucene.apache.org/ .
 
-**Apache Solr** http://lucene.apache.org/solr/.
+    **Apache Solr** http://lucene.apache.org/solr/.
 
-**ElasticSearch** https://www.elastic.co/products/elasticsearch.
-**lunr.js** http://lunrjs.com/.
+    **ElasticSearch** https://www.elastic.co/products/elasticsearch.
 
-**Xapian** http://xapian.org/.
+    **lunr.js** http://lunrjs.com/.
+
+    **Xapian** http://xapian.org/.
 
 - User-User collaborative filtering
 Được biết đến như k-NN collaborative filtering, core của giải thuật này chính là tìm những user có rating behavior tương tự trong quá khứ với user và user ratings hiện tại để tiên đoán những item tiếp theo mà user hiện tại có khả năng thích. Giả sử chúng ta có thể mô tả d topics cho mỗi user và movie. Tập phim đó có bao nhiêu% lãng mạng, hài hước, hành động. Và how much user thích nó với.
 
-|         | action           | romance | drama  |.....|
-| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
-| Mô tả về phim     | 0.3 | 0.01  | 1.5 |.....|
-| Sở thích của user u     | 2.5 | 0  | 0.8 |.....|
-| Sở thích của user u'     | 2.5 | 0.1  | 0.7 |.....|
+    |         | action           | romance | drama  |.....|
+    | ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
+    | Mô tả về phim     | 0.3 | 0.01  | 1.5 |.....|
+    | Sở thích của user u     | 2.5 | 0  | 0.8 |.....|
+    | Sở thích của user u'     | 2.5 | 0.1  | 0.7 |.....|
 
 Rating<Lu, Rv> = (0.3 * 2.5 + 0.01 * 0 + 1.5 * 0.8) 
 Rating<Lu', Rv> = (0.3 * 2.5 + 0.1 * 0.01 + 1.5 * 0.7)
@@ -75,11 +76,11 @@ Amazon là một trang web online shopping nổi tiếng đã sáng tạo ra ph�
 Chúng ta sẽ xét 2 loại sản phẩm Iphone7, Iphone7 Case Trainium. Có nhiều người khi mua mua Iphone7 sẽ mua 1 iphone 7 case và ngược lại. Cho nên chúng ta sẽ tạo ra một Co-Occurrence Matrix để recommend những products to user.  Do những người mua iphone 7 case sẽ mua iphone 7 cho nên Matrix là symmetric. Đầu tiên tôi sẽ nhìn vào iphone 7 row và tìm những user đã mua iphone 7 sau đó quyết định proposal cho họ iphone 7 case.
 </p>
 
-|Iphone 7 | Iphone 7           |   | ?  |?|
-| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
-|....|....|......|....|......|
-| ... | ... | ...| ....|....|
-| ?| ? | | **Iphone 7 Case** |**Iphone 7 Case**|
+    |Iphone 7 | Iphone 7           |   | ?  |?|
+    | ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:| -----:|
+    |....|....|......|....|......|
+    | ... | ... | ...| ....|....|
+    | ?| ? | | **Iphone 7 Case** |**Iphone 7 Case**|
 
 ### Hướng dẫn Build 1 simple user-user recommender system dùng Movielens data.
 - Database modeling for Movie-Review app: Chúng ta thấy trong mô hình này một phim có nhiều genres và 1 users có thể reviews trên nhiều phim.
@@ -101,9 +102,13 @@ https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
 ### Result:
 
 Data: https://github.com/quangvinh0513/movie_recommender_app1/tree/master/app/models/import/recommender_system/movie_data
+
 App demo: https://github.com/quangvinh0513/movie_recommender_app1
+
 Result Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/avr_g.json
+
 Test Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/test.txt
+
 Mean Squared Error trên test data của Movielen là 1.23 .
 
 ### Kết luận:
