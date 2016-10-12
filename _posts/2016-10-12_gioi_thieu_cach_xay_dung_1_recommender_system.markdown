@@ -62,13 +62,13 @@ Phương pháp dựa trên mô tả về những những item với user profile
     | Sở thích của user u     | 2.5 | 0  | 0.8 |.....|
     | Sở thích của user u'     | 2.5 | 0.1  | 0.7 |.....|
 
-Rating<Lu, Rv> = (0.3 * 2.5 + 0.01 * 0 + 1.5 * 0.8) 
+    Rating<Lu, Rv> = (0.3 * 2.5 + 0.01 * 0 + 1.5 * 0.8) 
 
-Rating<Lu', Rv> = (0.3 * 2.5 + 0.1 * 0.01 + 1.5 * 0.7)
+    Rating<Lu', Rv> = (0.3 * 2.5 + 0.1 * 0.01 + 1.5 * 0.7)
 
-Chúng ta có thể dễ dàng thấy rằng nếu trong quá khư user u thích  phim Rv thì có khả năng user Lu' cũng sẽ thích phim có 
+    Chúng ta có thể dễ dàng thấy rằng nếu trong quá khư user u thích  phim Rv thì có khả năng user Lu' cũng sẽ thích phim có 
 
-tính chất tương tự như Rv.
+    tính chất tương tự như Rv.
 
 - Item-Item collaborative filtering
 <p>
@@ -98,20 +98,20 @@ Xét trên tất cả những bộ phim mà user đã review. Nếu user đã re
 - Tính khoảng cách giữa tất cả user dựa trên mảng rating.
 Sau khi có được vector rating của user trên tất cả cả tập phim theo group. Lúc này chúng ta có thể dễ dàng tính được khoảng cách giữa những user và generate ra một similarity matrix giữa những user. Sau khi có được similar matrix chúng ta sẽ dùng nó để recommend những phim những user trong quá khứ đã xem cho user hiện tại.
 
-https://en.wikipedia.org/wiki/K-means_clustering
-https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
+    https://en.wikipedia.org/wiki/K-means_clustering
+    https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
 
 ### Result:
 
-Data: https://github.com/quangvinh0513/movie_recommender_app1/tree/master/app/models/import/recommender_system/movie_data
+    Data: https://github.com/quangvinh0513/movie_recommender_app1/tree/master/app/models/import/recommender_system/movie_data
 
-App demo: https://github.com/quangvinh0513/movie_recommender_app1
+    App demo: https://github.com/quangvinh0513/movie_recommender_app1
 
-Result Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/avr_g.json
+    Result Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/avr_g.json
 
-Test Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/test.txt
+    Test Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/test.txt
 
-Mean Squared Error trên test data của Movielen là 1.23 .
+    Mean Squared Error trên test data của Movielen là 1.23 .
 
 ### Kết luận:
 Recommender systems là một technology giúp trích xúc những thông tin quan trọng từ user databases. Những system này giúp người dùng tìm những items mà học muốn mua 1 cách dễ dàng từ một business model và giúp tăng doanh thu cho doanh nghiệp. Ngày nay Recommender System đang trở nên vô cùng quan trọng bởi vì lượng dữ liệu của người dùng ngày càng tăng trên website cho nên việc xây dựng những recommender system là vô cùng cần thiết.
