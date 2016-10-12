@@ -5,9 +5,10 @@
  summary: Bài viết giới thiệu phương pháp xây dựng Recommender System
  categories: [MachineLearning]
  tags: ["MachineLearning"]
- images: 
+ images: http://blog.soton.ac.uk/hive/files/2012/05/recsys-data2.jpg
  author: Vinh Quang Nguyen 
 ---
+![solr](http://blog.soton.ac.uk/hive/files/2012/05/recsys-data2.jpg)
 
 Là 1 tập hợp những thông tin con của hệ thống, những thông tin con này được dung để tiên đoán được sở thích, rating của user trên những sản phẩm. Recommender System đã trở nên rất phổ biến trong những năm gần đây, và được sử dụng trong một loạt các lĩnh vực:. một số ứng dụng phổ biến bao gồm phim ảnh, âm nhạc, tin tức, sách, các bài báo nghiên cứu, các truy vấn tìm kiếm, thẻ xã hội, nhà hàng, dịch vụ tài chính, bảo hiểm nhân thọ, hẹn hò trực tuyến.
 
