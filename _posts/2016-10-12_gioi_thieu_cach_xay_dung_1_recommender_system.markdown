@@ -41,7 +41,7 @@ Phương pháp dựa trên mô tả về những những item với user profile
  - **References:**
    https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
 
- - **Tools for a content-based filtering:**
+ - **Những Tools cho content-based filtering:**
 
     **Apache Lucene** http://lucene.apache.org/ .
 
@@ -87,7 +87,9 @@ Chúng ta sẽ xét 2 loại sản phẩm Iphone7, Iphone7 Case Trainium. Có nh
 ### Hướng dẫn Build 1 simple user-user recommender system dùng Movielens data.
 - Database modeling for Movie-Review app: Chúng ta thấy trong mô hình này một phim có nhiều genres và 1 users có thể reviews trên nhiều phim.
 
-![untitled diagram 1](https://cloud.githubusercontent.com/assets/6763141/19292931/fd911b2a-9049-11e6-8232-a6d65eb117ae.png)
+<p align="center">
+<img src="https://cloud.githubusercontent.com/assets/6763141/19292931/fd911b2a-9049-11e6-8232-a6d65eb117ae.png" />
+</p>
 
 - Phân cụm những movies theo genres:
 Đối với movilens chúng ta sẽ có 19 genres đó là lý do về mặt trực quan chúng ta chia thành 19 cụm. Nhưng thật sự nếu chúng ta chia bao nhiêu cụm đi chăng nữa phương pháp này cho ra kết quả tương tự. Có thể cụm thứ nhất bao gồm những bộ phim lãng mạng, hài hước và cụm thứ 2 bao gồm những bộ phim về action, advanture v.v.v.  
