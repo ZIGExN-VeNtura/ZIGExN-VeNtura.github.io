@@ -105,7 +105,7 @@ Sau khi có được vector rating của user trên tất cả cả tập phim t
 
 - Data: https://github.com/quangvinh0513/movie_recommender_app1/tree/master/app/models/import/recommender_system/movie_data
 
-- App demo: https://github.com/quangvinh0513/movie_recommender_app1
+- App demo: https://github.com/quangvinh1305/recommender1234
 
 - Result Data: https://github.com/quangvinh0513/movie_recommender_app1/blob/master/avr_g.json
 
