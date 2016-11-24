@@ -66,7 +66,6 @@ class Zoo
   end
 end
 
-# Some test
 z = Zoo.new
 z.add(Cat.new('Kitty'))
 z.add(Dog.new('Pluto'))
