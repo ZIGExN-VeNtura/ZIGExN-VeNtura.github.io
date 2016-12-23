@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Regex căn bản trong ruby"
+title:  "Một số Regex thường dùng trong ruby"
 date:   2016-12-23
 summary: Bài viết giới thiệu cơ bản về cách sử dụng kỹ thuật regex dùng để xử lý chuỗi trong ruby.
 categories: [Ruby]
@@ -20,10 +20,11 @@ Tìm vị trí ký tự hoặc nhiều ký tự trong một chuỗi.
 {% highlight ruby %}
 s = "/learn/regex"
 idx = s =~ /regex/
-Kết quả trả về là:
+
+#Kết quả trả về là:
 # => 7
 
-Nếu không tìm thấy sẽ trả về nil.
+#Nếu không tìm thấy sẽ trả về nil.
 {% endhighlight %}
 
 Kiểm tra ký tự hoặc nhiều ký tự có nằm trong chuỗi hay không?
@@ -36,8 +37,8 @@ else
   puts "not found"
 end
 
-Kết quả trả về là:
-# =>  found the chars
+#Kết quả trả về là:
+# =>  "found the chars"
 {% endhighlight %}
 
 Chúng ta thấy đoạn mã trên cũng giống đoạn mã tìm vị trí ký tự. Nhưng nó khác ở chổ chúng ta có thể sử dụng điều kiện if trong trường hợp này.
@@ -50,7 +51,7 @@ s =~ /^(.+) .+? (.+)/
 puts $1
 puts $2
 
-Kết quả trả về là:
+#Kết quả trả về là:
 #  => "learn"
 #  => "extra"
 {% endhighlight %}
@@ -65,10 +66,10 @@ puts "Phone Num : #{phone}"
 phone = phone.gsub!(/\D/, "")
 puts "Phone Num : #{phone}"
 
-Kết quả trả về là:
+#Kết quả trả về là:
 
-Phone Num : 2004-959-559
-Phone Num : 2004959559
+#  => "Phone Num : 2004-959-559"
+#  => "Phone Num : 2004959559"
 {% endhighlight %}
 
 Tiếp theo, Chúng ta hãy xem đoạn code sau
@@ -83,9 +84,9 @@ text.gsub!("rails", "Rails")
 text.gsub!(/\brails\b/, "Rails")
 puts "#{text}"
 
-Kết quả trả về là:
+#Kết quả trả về là:
 
-Rails are Rails, really good Ruby on Rails
+=> "Rails are Rails, really good Ruby on Rails"
 {% endhighlight %}
 
-Chúng ta lưu ý rằng. hàm sub và gsub sẽ trả về một chuỗi mới. Nó không sửa chuỗi hiện tại nên nó sẽ làm cho code chúng ta chậm hơn. Vì thế, chúng ta nên dùng sub! và gsub!.
+Chúng ta lưu ý rằng. hàm ```sub``` và ```gsub``` sẽ trả về một chuỗi mới. Nó không sửa chuỗi hiện tại nên nó sẽ làm cho code chúng ta chậm hơn. Vì thế, chúng ta nên dùng ```sub!``` và ```gsub!```.
