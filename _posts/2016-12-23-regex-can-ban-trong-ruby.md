@@ -11,7 +11,7 @@ author: Trong Huu
 
 ### Giới thiệu:
 
-Biểu thức (regexps) là mô hình trong đó mô tả nội dung của một chuỗi. Chúng sử dụng để kiểm tra xem một chuỗi có chứa một mẫu nhất định, hoặc xuất ra các phần được tìm thấy. Chúng được tạo ra với / pat / và% r {} pat hoặc Regexp.new.
+Biểu thức chính qui(regular expression, hay viết tắt là regex) là mô hình trong đó mô tả nội dung của một chuỗi. Chúng sử dụng để kiểm tra xem một chuỗi có chứa một mẫu nhất định, hoặc xuất ra các phần được tìm thấy. Chúng được tạo ra với / pat / và% r {} pat hoặc Regexp.new
 
 ### Chúng ta xem một vài ví dụ sau:
 
