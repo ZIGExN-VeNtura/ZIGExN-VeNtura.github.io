@@ -96,6 +96,7 @@ ADD . $APP_HOME
 {% endhighlight %}
 
 Mình sẽ giải thích một vài command ở `Dockerfile` trên:
+
 1. `FROM`: Chỉ định image mà sử dụng để làm base cho container. Trong trường hợp này, chúng ta sử dụng ruby 2.3.3
 2. `RUN`: Chỉ định command được sử dụng khi build
 3. `ENV`: Set biến môi trường
@@ -112,43 +113,49 @@ Trong cùng thư mục chứa Rails, tạo file `docker-compose.yml` có nội d
 # config/database.yml
 version: '2'
 services:
-db:
-image: postgres:9.6.1
-ports:
-- "5432:5432"
+  db:
+    image: postgres:9.6.1
+    ports:
+      - "5432:5432"
+    volumes:
+      - /data/postgresql-9.6.1:/var/lib/postgresql/data
 
-web:
-build: .
-command: bin/rails server --port 3000 --binding 0.0.0.0
-ports:
-- "3000:3000"
-depends_on:
-- db
-volumes:
-- .:/myapp
+  web:
+    build: .
+    command: bin/rails server --port 3000 --binding 0.0.0.0
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    volumes:
+      - .:/myapp
 {% endhighlight %}
 
 Trong file Docker Compose này chúng ta đã chỉ định 2 `services` sẽ chạy song song là `web` và `db`.
-`db` được chỉ định sẽ sử dụng image `postgres:9.6.1` qua`image: postgres:9.6.1` và có thể truy xuất qua cổng `5432`. Thiết định mặc định của `ports` là `<HOST_PORT>:<DOCKER_PORT>`.
-`web` sử dụng `Dockerfile` thông qua `build: .`và truy xuất qua cổng `3000`. `depends_on` sẽ chỉ định services mà `web` sẽ cần và từ đó chạy services đó trước khi chạy `web`; ở đây là `db`. `volumes` sẽ kết nối thư mục ở host vào thư mục được chỉ định trên container; ở đây chúng ta kết nối thư mục Rails vào thư mục `/myapp` trong container.
+
+* `db` được chỉ định sẽ sử dụng image `postgres:9.6.1` qua`image: postgres:9.6.1` và có thể truy xuất qua cổng `5432`. Thiết định mặc định của `ports` là `<HOST_PORT>:<DOCKER_PORT>`. `volumes` sẽ kết nối thư mục ở host vào thư mục được chỉ định trên container; ở đây chúng ta kết nối thư mục `/data/postgres-9.6.1` trong Rails root vào thư mục `/var/lib/postgresql/data` trong container; nhờ vậy khi có bất kì thay đổi gì trong database, data sẽ được lưu xuống host thay vì chỉ nằm trên container tránh tình trạng mất dữ liệu khi "lỡ tay" xóa container.
+* `web` sử dụng `Dockerfile` thông qua `build: .` và truy xuất qua cổng `3000`. `depends_on` sẽ chỉ định services mà `web` sẽ cần và từ đó chạy services đó trước khi chạy `web`; ở đây là `db`. Chúng ta kết nối thư mục Rails vào thư mục `/myapp` trong container thông qua `volumes`
 
 Lúc này trong thư mục gốc của Rails, để bắt đầu build và khởi động container, bạn chạy lệnh:
-`docker-compose up`
+
+{% highlight bash %}
+$ docker-compose up
+{% endhighlight %}
 
 ### Thiết lập cho database
 Do chúng ta kết nối tới database trên container, nên sẽ cần chỉnh sửa file `config/database.yml`:
-{% highlight bash %}
+{% highlight ruby %}
 # docker-compose.yml
 development: &default
-adapter: postgresql
-database: myapp_development
-pool: 5
-username: postgres
-host: db
+  adapter: postgresql
+  database: myapp_development
+  pool: 5
+  username: postgres
+  host: db
 
 test:
-<<: *default
-database: myapp_test
+  <<: *default
+  database: myapp_test
 {% endhighlight %}
 
 Sau khi thiết lập kết nối với database từ Rails app, ta có thể chạy lệnh tạo và migrate database qua:
