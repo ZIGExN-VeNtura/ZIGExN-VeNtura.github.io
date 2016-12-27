@@ -86,7 +86,7 @@ puts "#{text}"
 
 #Kết quả trả về là:
 
-=> "Rails are Rails, really good Ruby on Rails"
+#  => "Rails are Rails, really good Ruby on Rails"
 {% endhighlight %}
 
 Chúng ta lưu ý rằng. hàm ```sub``` và ```gsub``` sẽ trả về một chuỗi mới. Nó không sửa chuỗi hiện tại nên nó sẽ làm cho code chúng ta chậm hơn. Vì thế, chúng ta nên dùng ```sub!``` và ```gsub!```.
