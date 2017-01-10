@@ -20,3 +20,4 @@ paginate_path: "/page/:num"
 permalink: /:categories/:year/:title
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
