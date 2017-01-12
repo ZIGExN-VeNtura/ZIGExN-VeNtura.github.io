@@ -38,13 +38,13 @@ irb(main):001:0> Process.pid
 Mở thêm một session irb mới:
 
 {% highlight bash %}
-irb(main):001:0> Process.kill(:INT, 23204)
+irb(main):001:0> Process.kill(:QUIT, 23204)
 {% endhighlight %}
 
-Khi đó ta sẽ thấy session irb đầu tiên bị thoát ra. Ở trên ta đã dùng method `Process.kill` để gửi signal `INT`(interrupt) đến một process, khi một process nhận được signal này sẽ kết thúc thực thi và exit. Tương tự với method `Process.kill` trong Linux ta có command `kill` với cùng chức năng, ví dụ:
+Khi đó ta sẽ thấy session irb đầu tiên bị thoát ra. Ở trên ta đã dùng method `Process.kill` để gửi signal `QUIT`(interrupt) đến một process, khi một process nhận được signal này sẽ kết thúc thực thi và exit. Tương tự với method `Process.kill` trong Linux ta có command `kill` với cùng chức năng, ví dụ:
 
 {% highlight bash %}
-kill -s INT 23204
+kill -s QUIT 23204
 {% endhighlight %}
 
 Trong Linux số lượng và ý nghĩa các signal thường ít thay đổi, dưới đây là danh sách một số signal thông dụng:
