@@ -170,8 +170,9 @@ Cấu trúc của command để tương tác với container là `docker-compose
 
 #### Một vài command hữu ích khác
 * Truy cập shell của `web`: `docker-compose exec -it web bash`
-* Kết nối với server console: `docker-compose attach web`
+* Kết nối với server console: `docker attach <CONTAINER_FULL_NAME>`
 * Khởi động lại container `web`: `docker-compose restart web`
+* List tất cả các container đang hoạt động: `docker ps`
 * Ngoài ra còn nhiều command khác, bạn có thể tham khảo tại [đây](https://docs.docker.com/compose/reference/)
 
 ## Kết luận
