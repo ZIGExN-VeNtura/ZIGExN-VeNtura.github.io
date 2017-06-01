@@ -2,6 +2,7 @@
 layout: page
 title: About US
 permalink: /about/
+description: "ZIGExN tại Nhật là một tập đoàn chuyên về các dịch vụ internet. Nằm trong top những công ty phát triển nhanh nhất về internet, ZIGExN đã được Delloite trao tặng danh hiệu Japan Technology Fast 50..."
 ---
 
 <h3 class="about_title">GIỚI THIỆU VỀ ZIGExN</h3>
