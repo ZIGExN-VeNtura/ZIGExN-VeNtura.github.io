@@ -23,29 +23,34 @@ Tổng quan [Google AMP](https://www.ampproject.org/)
 ### TL;DR
 
 **CSS**
+
 - Không đưọc sử dụng inline CSS và external CSS.
 - Add internal CSS bằng thẻ `<style amp-custom></style>`.
 - Internal CSS không vượt quá 50KB.
 - Internal CSS không đưọc chứa `!important` `charset`.
 
 **JS**
+
 - Không được include bất cứ file hoặc đoạn js nào, nếu cần thì phải sử dụng các component của AMP
 - Chỉ đưọc include thẻ `<script>` với type là `application/ld+json`
 - Không cho phép chứa function `javascript` ví dụ: `href=javascript:;`
 - Không cho phép sử dụng `onclick`, có thể dùng `on` để thay thế. Cú pháp `eventName:targetId[.methodName[(arg1=value, arg2=value)]`
 
   Ví dụ:
-   ```html
-    <a on="tap:targetForm.hide">Click</a>
-    <form id="targetForm" on="submit.modal-id.show"></form>
-  ```
+
+{% highlight html %}
+<a on="tap:targetForm.hide">Click</a>
+<form id="targetForm" on="submit.modal-id.show"></form>
+{% endhighlight %}
+
 - Sử dụng `amp-lightbox` thay thế modal bootstrap.
 - Khi muốn toggle show/hide một đối tượng thì sử dụng `toggleVisibility`
 
   Ví dụ:
-  ```html
-    <button on="tap:targetForm.toggleVisibility">Toggle</button>
-  ```
+
+{% highlight html %}
+<button on="tap:targetForm.toggleVisibility">Toggle</button>
+{% endhighlight %}
 
   Lưu ý, để sử dụng đưọc `toggleVisibility` thì không được ẩn object bằng `display: none` nó sẽ ngăn cản AMP thay đổi trạng thái của đối tượng, sử dụng attribute `hidden` để thay thế.
 
@@ -56,18 +61,20 @@ Tổng quan [Google AMP](https://www.ampproject.org/)
 - Sử dụng `amp-img` thay cho thẻ `img`. Lưu ý, cần phải cung cấp `width` và `height`, nếu sử dụng responsive có thể thêm `layout="responsive"`
 - Sử dụng attribute `fallback` để load hình ảnh thay thế khi ảnh gốc bị lỗi hoặc load chậm
   Ví dụ:
-  ```html
-    <amp-img alt="Mountains"
-    width="550"
-    height="368"
-    src="images/mountains.webp">
-    <amp-img alt="Mountains"
-      fallback
-      width="550"
-      height="368"
-      src="images/mountains.jpg"></amp-img>
-    </amp-img>
-  ```
+
+{% highlight html %}
+<amp-img alt="Mountains"
+width="550"
+height="368"
+src="images/mountains.webp">
+<amp-img alt="Mountains"
+  fallback
+  width="550"
+  height="368"
+  src="images/mountains.jpg"></amp-img>
+</amp-img>
+{% endhighlight %}
+
 - Sử dụng `amp-iframe` thay thế cho `iframe`, `src` của `amp-iframe` phải là `https`.
 
 **Display dynamic data**
@@ -75,39 +82,42 @@ Tổng quan [Google AMP](https://www.ampproject.org/)
 
   Ví dụ: submit form bằng ajax và hiển thị kết quả trên modal
 
-  ```html
-    <form on="submit-success:targetLightbox, AMP.setState({ formResponse: event.response })">
-      <button type="submit">Submit</button>
-    </form>
+{% highlight html %}
+<form on="submit-success:targetLightbox, AMP.setState({ formResponse: event.response })">
+  <button type="submit">Submit</button>
+</form>
 
-    <amp-lightbox id="targetLightbox" layout="nodisplay">
-      <div class="lightbox">
-        <amp-img src="my-full-image.jpg" width=300 height=800 on="tap:my-lightbox.close">
-        <p [text]="formResponse.mesage"></p>
-        <p [text]="formResponse.status"></p>
-      </div>
-    </amp-lightbox>
-  ```
+<amp-lightbox id="targetLightbox" layout="nodisplay">
+  <div class="lightbox">
+    <amp-img src="my-full-image.jpg" width=300 height=800 on="tap:my-lightbox.close">
+    <p [text]="formResponse.mesage"></p>
+    <p [text]="formResponse.status"></p>
+  </div>
+</amp-lightbox>
+{% endhighlight %}
 
   Lưu ý: `amp-binding` là feature đang trong giai đoạn thử nghiệm [Experimental features](https://ư.ampproject.org/dóc/refernce/experimental) vì vậy cần phải enable feature này trên môi trường development bằng cách thực hiện lệnh
-    ```js
+
+{% highlight js %}
       AMP.toggleExperiment('experiment')
-    ```
+{% endhighlight %}
+
   trên `Chrome devtools console`.
 
   Nếu muốn sử dụng `amp-binding` trên môi trường Production thì cần phải đăng kí origin trials [Tại đây](https://dóc.google.com/a/google.com/forms/d/e/1FAIpQLSfGCAjUU4pDu84Sclw6wjGVDiFJhVr61pYTMehIt6ẽ4ửm1Q/viewform) sau khi đăng kí thành công chúng ta sẽ nhận đưọc 1 token, add token vào thẻ `<head>`
 
-  ```html
-    <meta name="amp-experiment-token" content="HfmyLgNLmblRg3Alqy164Vywr">
-  ```
+{% highlight html %}
+<meta name="amp-experiment-token" content="HfmyLgNLmblRg3Alqy164Vywr">
+{% endhighlight %}
 
 **Form**
 - Bắt buộc phải chứa attribute `target` bằng `_top` hoặc `_blank`
 - Sử dụng `amp-form` thay cho `form_tag`, lưu ý cần add thêm authenticate token của rails vào form
 
-  ```ruby
-    <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
-  ```
+{% highlight ruby %}
+<%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+{% endhighlight %}
+
 - Các events quan trọng `submit`, `submit-success`, `submit-error`
 
 **Others**
@@ -127,9 +137,9 @@ Tham khảo [CORS Security in AMP](https://github.com/ampproject/amphtml/blob/ma
 Ví dụ: Ta muốn `/products/abc` sẽ load view HTML chuẩn, còn `/products/abc.amp` sẽ load view của AMP
 Đầu tiên, tạo một mime type mới trong `config/initializers/mime_types.rb`
 
-```ruby
-  Mime::Type.register 'text/html', :amp
-```
+{% highlight ruby %}
+Mime::Type.register 'text/html', :amp
+{% endhighlight %}
 
 Tạo một layout mới cho AMP version tuân thủ theo các tiêu chuẩn của AMP
 
@@ -141,14 +151,16 @@ Tạo một layout mới cho AMP version tuân thủ theo các tiêu chuẩn c�
 - Chứa thẻ `<link rel="canonical" href="$SOME_URL" />` bên trong thẻ `<head>` để chỉ đển version HTML của page.
 - Chứa thẻ `<meta name="viewport" content="width=device-width,minimum-scale=1">` bên trong thẻ `<head>`.
 - Chứa `amp-boilerplate` bên trong thẻ `<head>`
-  ```html
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  ```
+
+{% highlight html %}
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+{% endhighlight %}
+
 - Ngoài ra, bên trong thẻ `<head>` có thẻ chứa `metadata` định nghĩa structure của page. Phần này sẽ đưọc đề cập ở phần sau.
 
 File `app/views/layouts/application.amp.erb` sẽ có nội dung như sau
 
-```html
+{% highlight ruby %}
   <!doctype html>
   <html ⚡>
     <head>
@@ -164,32 +176,33 @@ File `app/views/layouts/application.amp.erb` sẽ có nội dung như sau
       </div>
     </body>
   </html>
-```
+{% endhighlight %}
 
 #### 3.2 Add custom CSS cho AMP
 
 - Tạo một file sass mới cho AMP `app/assets/stylesheets/amp/application.scss`
 
-```
+{% highlight css %}
   body {
     ...some styles here...
   }
-```
+{% endhighlight %}
+
 - Register file này vào precompilation bằng cách add vào `config/application.rb`
 
-```ruby
+{% highlight ruby %}
   config.assets.precompile << 'amp/application.scss'
-```
+{% endhighlight %}
 
 - Do AMP chỉ chấp nhận internal CSS nên ta sẽ phải copy tất cả sass đã compile vào view bằng cách add code sau vào thẻ `<head>`
 
-```ruby
-  <% if Rails.application.assets && Rails.application.assets['amp/application'] %>
-    <style amp-custom><%= Rails.application.assets['amp/application'].to_s.html_safe %></style>
-  <% else %>
-    <style amp-custom><%= File.read "#{Rails.root}/public#{stylesheet_path('amp/application', host: nil)}" %></style>
-  <% end %>
-```
+{% highlight erb %}
+<% if Rails.application.assets && Rails.application.assets['amp/application'] %>
+  <style amp-custom><%= Rails.application.assets['amp/application'].to_s.html_safe %></style>
+<% else %>
+  <style amp-custom><%= File.read "#{Rails.root}/public#{stylesheet_path('amp/application', host: nil)}" %></style>
+<% end %>
+{% endhighlight %}
 
 - ở môi trường development ta sử dụng `Rails.application.assets` helper để get tất cả sass compiled của AMP.
 - ở môi trường production do variable này là `nil` nên chúng ta phải đọc compiled file trong thư mục `public/assets`.
@@ -198,12 +211,12 @@ File `app/views/layouts/application.amp.erb` sẽ có nội dung như sau
 - Sau khi hoàn thành page AMP chúng ta cần phải giúp Google bot tìm thấy và index chúng bằng cách gắn các thẻ `<link rel="canonical">`
 - Gắn vào layout của page AMP link đến page format html
 
-```ruby
+{% highlight ruby %}
   <link rel="canonical" href="<%= url_for(format: :html, only_path: false) %>" >
-```
+{% endhighlight %}
 
 - ở layout non-AMP link đến page AMP
 
-```ruby
+{% highlight ruby %}
   <link rel="amphtml" href="<%= url_for(format: :amp, only_path: false) %>" >
-```
+{% endhighlight %}
