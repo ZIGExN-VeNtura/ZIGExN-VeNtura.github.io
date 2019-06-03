@@ -5,7 +5,7 @@ date:   2016-11-23
 summary: Bài viết giới thiệu cơ bản về cách sử dụng kỹ thuật duck typing cho ruby
 categories: [Ruby]
 tags: ["Ruby"]
-image: images/duck-typing.jpg
+image: assets/images/duck-typing.jpg
 author: Huy Binh
 ---
 

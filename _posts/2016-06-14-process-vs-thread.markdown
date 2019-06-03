@@ -5,7 +5,7 @@ date:   2016-06-14
 summary: Bài viết giới thiệu process và thread và sự khác nhau giữa hai khái niệm này.
 categories: [Infrastructure]
 tags: ["ruby"]
-image: images/process-threads.png
+image: assets/images/process-threads.png
 author: Son Dang
 ---
 
@@ -26,7 +26,7 @@ Mỗi bước này sẽ được chuyển thành ngôn ngữ máy hay là mã nh
 ### Process
 Giờ chúng ta có thể tưởng tượng instruction set này tạo thành 1 chương trình (application) và tập hợp của instruction kết hợp với nhau tạo thành một tác vụ (task) cụ thể. Khi được thực thi thì tác vụ này là một process.
 
-![single-thread](/images/single-thread.png)
+![single-thread](/assets/images/single-thread.png)
 
 Vậy process là gì? Process là quá trình hoạt động của một ứng dụng. Điều này có nghĩa là process bao gồm các dòng lệnh và trạng thái thực thi của những dòng lệnh đó. Ví dụ khi bạn click đúp vào icon Microsoft Word trên màn hình desktop để khởi động chương trình chính là bạn đã bắt đầu một process của chương trình Word. Khi process bắt đầu thì một vùng nhớ sẽ được phân phối để sử dụng trong quá trình thực thi instruction.
 
@@ -37,7 +37,7 @@ Hệ điều hành (OS) ngày nay cho phép phân phối nhiều process cùng m
 
 Có thể tưởng tượng thread là một phiên bản nhẹ hơn của process. Một thread có thể thực hiện bất cứ tác vụ gì mà một process có thể thực hiện. Tuy vậy, do thread nằm trong process, những tác vụ của thread thực hiện thường nhỏ hơn. Điểm khác biệt cơ bản giữa thread và process là nhiều thread nằm trong cùng một process dùng một không gian bộ nhớ giống nhau, trong khi process thì được phân bổ riêng biệt. Điều này cho phép các thread đọc và viết cùng một kiểu cấu trúc và dữ liệu, giao tiếp dễ dàng giữa các thread với nhau. Việc có nhiều thead chạy song song trong cùng một process giúp multitasking nhẹ và dễ dàng hơn.
 
-![multithreaded-process](/images/multithreaded-process.png)
+![multithreaded-process](/assets/images/multithreaded-process.png)
 
 ### Process vs. Thread
 Dưới đây là bảng so sánh giữa process và thread:

@@ -5,7 +5,7 @@ date:   2015-08-12 23:55:00
 summary: VIM là 1 công cụ soạn thảo tuyệt vời cho rails. VIM cung cấp khả năng tùy biến cao theo thói quen của người dùng giúp tăng tốc độ soạn thảo cho lập trình viên.
 categories: [ruby on rails]
 tags: [""]
-image: images/chimen.png
+image: assets/images/chimen.png
 author: Lân Nguyễn
 ---
 
@@ -13,7 +13,7 @@ author: Lân Nguyễn
 
 Đây là kết quả sau khi cấu hình VIM thành 1 IDE:
 
-![VIM IDE](/images/chimen.png)
+![VIM IDE](/assets/images/chimen.png)
 
 Màn hình IDE gồm 4 window: editor, server, deploy, ssh
 

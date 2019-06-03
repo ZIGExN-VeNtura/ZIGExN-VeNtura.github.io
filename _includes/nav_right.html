@@ -7,16 +7,15 @@
       <ul class="ArticleBox_list t-list">
         <ul class="posts">
           {% for post in site.posts limit:10 %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
           {% endfor %}
         </ul>
       </ul>
     </div>
   </div>
 </div>
-
 <div class="categories_articless">
   <div class="ArticleBox">
     <h3 class="ArticleBox_header">
@@ -26,30 +25,29 @@
       <ul class="ArticleBox_list t-list">
         <li><a href="/categories/ruby on rails/">Ruby on Rails</a>
           <ul>
-          {% for item in site.RoR %}
+            {% for item in site.RoR %}
             <li><a href="/tags/ruby on rails/#{{ item }}">{{ item }}</a></li>
-          {% endfor %}
+            {% endfor %}
           </ul>
         </li>
         <li><a href="/categories/web development/">Web Development</a>
           <ul>
-          {% for item in site.WebDev %}
+            {% for item in site.WebDev %}
             <li><a href="/tags/web development/#{{ item }}">{{ item }}</a></li>
-          {% endfor %}
+            {% endfor %}
           </ul>
         </li>
         <li><a href="/categories/infrastructure/">Infrastructure</a>
           <ul>
-          {% for item in site.Infrastructure %}
+            {% for item in site.Infrastructure %}
             <li><a href="/tags/infrastructure/#{{ item }}">{{ item }}</a></li>
-          {% endfor %}
+            {% endfor %}
           </ul>
         </li>
       </ul>
     </div>
   </div>
 </div>
-
 <div class="monthly_articless">
   <div class="ArticleBox">
     <h3 class="ArticleBox_header">
@@ -59,19 +57,18 @@
       <ul class="ArticleBox_list t-list">
         {% assign counter = 0 %}
         {% for post in site.posts %}
-          {% assign thisyear = post.date | date: "%B %Y" %}
-          {% assign prevyear = post.previous.date | date: "%B %Y" %}
-          {% assign counter = counter | plus: 1 %}
-          {% if thisyear != prevyear %}
-            <li><a href="/recent_post/#{{ post.date | date:"%B-%Y" }}">{{ thisyear }} ({{ counter }})</a></li>
-            {% assign counter = 0 %}
-          {% endif %}
+        {% assign thisyear = post.date | date: "%B %Y" %}
+        {% assign prevyear = post.previous.date | date: "%B %Y" %}
+        {% assign counter = counter | plus: 1 %}
+        {% if thisyear != prevyear %}
+        <li><a href="/recent_post/#{{ post.date | date:"%B-%Y" }}">{{ thisyear }} ({{ counter }})</a></li>
+        {% assign counter = 0 %}
+        {% endif %}
         {% endfor %}
       </ul>
     </div>
   </div>
 </div>
-
 <div class="follow">
   <ul class="social-media-list">
     <li>

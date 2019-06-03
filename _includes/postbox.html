@@ -1,15 +1,17 @@
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
 <div class="col-md-12 grid-item">
-	<div class="card post-meta">
-		<div class="card-block">
-			<div class="author-meta">
-				<span class="post-name"><a target="_blank" href="{{ site.base_url }}/authors">{{ author.name }}</a></span>
-				<span class="post-date">{{ post.date | date_to_string }}</span>
-			</div>
-			<h2 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-			<h4 class="card-text">{{ post.summary | strip_html | truncatewords:30 }}</h4>
-		</div>
-	</div>
+  <div class="card post-meta">
+    <div class="card-block">
+      <div class="author-meta">
+        <span class="post-name"><a target="_blank" href="{{ site.base_url }}/authors">{{ author.name }}</a></span>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
+      </div>
+      <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h4 class="card-text">{{ post.summary | strip_html | truncatewords:30 }}</h4>
+      <hr>
+    </div>
+  </div>
 </div>
+
 <!-- end post -->

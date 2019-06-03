@@ -5,7 +5,7 @@ date:   2016-07-05
 summary: Dịch từ một bài viết hay giới thiệu về phong cách thiết kế Web design của Nhật Bản
 categories: [design]
 tags: ["design"]
-image: images/thumb_wa.jpg
+image: assets/images/thumb_wa.jpg
 author: Thao Phan
 ---
 

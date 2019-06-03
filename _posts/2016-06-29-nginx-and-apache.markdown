@@ -5,7 +5,7 @@ date:   2016-06-29
 summary: NGINX và APACHE là 2 open source web server phổ biến nhất hiện nay. Chúng phục vụ hơn 50% lượng traffic trên mạng internet.
 categories: [Infrastructure]
 tags: ["web server"]
-image: images/nginx-vs-apache.png
+image: assets/images/nginx-vs-apache.png
 featured: true
 
 author: Kiet Nguyen
@@ -44,7 +44,7 @@ Cache loader process: process này chạy lúc khởi động để nạp bộ n
 
 - Worker process: là  những process làm việc với connections, nó đọc và ghi nội dung vào disk, và giao tiếp với app server, handle request từ clients.
 
-![nginx-worker](/images/nginx-worker.png)
+![nginx-worker](/assets/images/nginx-worker.png)
 
 ### III. So sánh giữa `APACHE` và `NGINX`:
 

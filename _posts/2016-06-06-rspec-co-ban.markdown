@@ -5,10 +5,10 @@ date:   2016-06-05 08:55:00
 summary:  Tìm hiểu về cách sử dụng Rspec để kiểm thử chức năng của ứng dụng web Ruby on Rails.
 categories: [web development]
 tags: ["rspec", "testing", "TDD"]
-image: images/testing.jpg
+image: assets/images/testing.jpg
 author: Vy Dao
 ---
-![TESTING](/images/testing.jpg)
+![TESTING](/assets/images/testing.jpg)
 
 Đa phần các lập trình viên thường chỉ lo viết code mà ít ai chú ý đến việc viết test cho những đoạn code mà mình vừa viết ra. Điều này có thể làm bạn cảm thấy không thành vấn đề khi bạn làm việc một mình, nhưng khi bạn làm việc với những lập trình viên khác, với những dự án lớn hơn, nhiều chức năng phức tạp thì chắc chắn việc không kiểm soát được code của mình sẽ gây ra nhiều vấn đề khiến bạn đau đầu.
 

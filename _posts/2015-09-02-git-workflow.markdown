@@ -5,11 +5,11 @@ date:   2015-09-02 23:55:00
 summary: Ngày nay, trong quá trình làm việc nhóm trong 1 dự án code thì GIT là 1 công cụ không thể thiếu được. GIT giúp từng cá nhân theo dõi, phát triển từng chức năng riêng biệt. Đồng thời, GIT cũng hỗ trợ tốt trong việc làm việc nhóm, giúp hợp nhất các đóng góp của mỗi thành viên trong nhóm
 categories: [web development]
 tags: ["git"]
-image: images/socialite.jpg
+image: assets/images/socialite.jpg
 author: Lân Nguyễn
 ---
 
-![GIT COVER](/images/socialite.jpg)
+![GIT COVER](/assets/images/socialite.jpg)
 
 Ngày nay, trong quá trình làm việc nhóm trong 1 dự án code thì **GIT** là 1 công cụ được sử dụng hàng ngày. GIT giúp từng cá nhân theo dõi, phát triển từng chức năng riêng biệt. Đồng thời, GIT cũng hỗ trợ tốt trong việc làm việc nhóm, giúp hợp nhất các đóng góp của mỗi thành viên trong nhóm. Nhưng để sử dụng tốt công cụ tuyệt vời này, tôi xin đưa ra 1 số best practice sau.
 
@@ -33,41 +33,41 @@ Cách sửa gấp:
 
   + Thứ hai, **sau 1 thời gian feature branch có rất nhiều commit**, chúng ta xem lại thấy các commit bị rối, ta sử dụng **git rebase -i (Interactive Rebase)** để giải quyết các vấn đề sau:
 
-![GIT REBASE](/images/rebase.png)
+![GIT REBASE](/assets/images/rebase.png)
 
-![GIT REBASE](/images/default_rebase.png)
+![GIT REBASE](/assets/images/default_rebase.png)
 
 a, **Một số commit có message chưa rõ nghĩa, cần sửa lại message**
 
-![VIM REBASE REWORD](/images/reword_rebase.png)
+![VIM REBASE REWORD](/assets/images/reword_rebase.png)
 
 b,  **Một số commit quá lớn cần tách ra làm nhiều commit nhỏ hơn**
 
-![VIM REBASE SPLIT](/images/split_rebase.png)
+![VIM REBASE SPLIT](/assets/images/split_rebase.png)
 
-![VIM REBASE SPLIT](/images/split_rebase_1.png)
+![VIM REBASE SPLIT](/assets/images/split_rebase_1.png)
 
-![VIM REBASE SPLIT](/images/split_rebase_2.png)
+![VIM REBASE SPLIT](/assets/images/split_rebase_2.png)
 
-![VIM REBASE SPLIT](/images/split_result.png)
+![VIM REBASE SPLIT](/assets/images/split_result.png)
 
 c, **Một số commit quá nhỏ, có thể gom lại với nhau**
 
-![VIM REBASE SQUASH](/images/squash_rebase.png)
+![VIM REBASE SQUASH](/assets/images/squash_rebase.png)
 
-![VIM REBASE SQUASH](/images/squash_rebase_1.png)
+![VIM REBASE SQUASH](/assets/images/squash_rebase_1.png)
 
-![VIM REBASE SQUASH](/images/squash_rebase_2.png)
+![VIM REBASE SQUASH](/assets/images/squash_rebase_2.png)
 
-![VIM REBASE SQUASH](/images/squash_rebase_3.png)
+![VIM REBASE SQUASH](/assets/images/squash_rebase_3.png)
 
-![VIM REBASE SQUASH](/images/squash_result.png)
+![VIM REBASE SQUASH](/assets/images/squash_result.png)
 
 d, **Một số commit không theo đúng thứ tự, cần sắp xếp lại**
 
-![VIM REBASE REORDER](/images/reorder_rebase.png)
+![VIM REBASE REORDER](/assets/images/reorder_rebase.png)
 
-![VIM REBASE REORDER](/images/reorder_result.png)
+![VIM REBASE REORDER](/assets/images/reorder_result.png)
 
 
 __2. Feature branch cần cập nhật từ phần chung khi xảy ra conflict hoặc lấy phần mới từ người khác__

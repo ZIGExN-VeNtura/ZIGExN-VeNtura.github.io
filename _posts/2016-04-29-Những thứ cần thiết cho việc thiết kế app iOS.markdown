@@ -5,7 +5,7 @@ date:   2016-04-29 23:55:00
 summary: Trong bài viết này mình sẽ tóm tắt một vài thông số cơ bản của các element iOS và những điểm cần lưu ý khi thiết kế ứng dụng.
 categories: [web development]
 tags: ["iOS"]
-image: images/ios_image_top.png
+image: assets/images/ios_image_top.png
 author: ThaoNNM
 ---
 Trước khi bạn bắt đầu thiết kế, hãy xem qua [Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/index.html?utm_source=twitterfeed&utm_medium=twitter) cho iOS - gọi tắt là [HIG](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/index.html?utm_source=twitterfeed&utm_medium=twitter) - của Apple để chắc chắn mình sẽ không vi phạm bất kỳ nguyên tắc cơ bản áp dụng cho việc thiết kế.
@@ -16,19 +16,19 @@ Trong bài viết này mình sẽ tóm tắt một vài thông số cơ bản c�
 
   __1. Độ phân giải màn hình của từng loại máy__
 
-  ![IOS apps](/images/ios_resolution.jpg)
+  ![IOS apps](/assets/images/ios_resolution.jpg)
 
   __2. Mật độ điểm ảnh, chế độ màu, nhiệt độ màu__
 
-  ![IOS apps](/images/ios_color.jpg)
+  ![IOS apps](/assets/images/ios_color.jpg)
 
   __3. Kích thước của icon__
 
-  ![IOS apps](/images/ios_icon.png)
+  ![IOS apps](/assets/images/ios_icon.png)
 
   __4. Kiểu chữ__
 
-  ![IOS apps](/images/ios_fontsize.jpg)
+  ![IOS apps](/assets/images/ios_fontsize.jpg)
 
 ### Những điểm cần lưu ý trong thiết kế
 
@@ -42,13 +42,13 @@ Trong bài viết này mình sẽ tóm tắt một vài thông số cơ bản c�
 
   Ví dụ:  Màn hình Hiển thị thời tiết chỉ tập trung vào hiển thị ngày và nhiệt độ, thời tiết khí hậu của từng ngày.
 
-  ![Weather](/images/ios_weather.jpg)
+  ![Weather](/assets/images/ios_weather.jpg)
 
   **Làm nổi bật những thông tin người dùng quan tâm**
 
   Bạn có thể giúp cho người dùng tập trung vào những khung thông tin được thiết kế tinh tế và nổi bật.
 
-  ![quan tâm](/images/ios_screenshot.jpg)
+  ![quan tâm](/assets/images/ios_screenshot.jpg)
 
   Như hình trên, mặc dù có nhiều button khác trên cùng một màn hình nhưng chúng không cạnh tranh để thu hút sự chú ý cho hành động chính.
 

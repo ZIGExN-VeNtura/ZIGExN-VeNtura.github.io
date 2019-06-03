@@ -48,41 +48,32 @@ title: Home
 
 <section class="recent-posts row">
 
-    <div class="col-sm-4">
-        {% include sidebar.html %}
-    </div>
+  <div class="col-sm-8">
 
-    <div class="col-sm-8">
+      <div class="section-title">
+          <h2><span>All Stories</span></h2>
+      </div>
 
-        <div class="section-title">
-            <h2><span>All Stories</span></h2>
-        </div>
+      <div class="row listrecent"> <!-- class masonrygrid -->
 
-        <div class="row listrecent"> <!-- class masonrygrid -->
+          {% for post in paginator.posts %}
+            {% include postbox.html %}
+          {% endfor %}
 
-            {% for post in paginator.posts %}
+      </div>
 
-            {% unless post.featured == true %}
+      <!-- Pagination -->
+      <div class="bottompagination">
 
-                {% include postbox.html %}
+          <span class="navigation" role="navigation">
 
-            {% endunless %}
+              {% include pagination.html %}
 
-            {% endfor %}
+          </span>
 
-        </div>
-
-        <!-- Pagination -->
-        <div class="bottompagination">
-
-            <span class="navigation" role="navigation">
-
-                {% include pagination.html %}
-
-            </span>
-
-        </div>
-
-    </div>
-
+      </div>
+  </div>
+  <div class="col-sm-4">
+    {% include sidebar.html %}
+  </div>
 </section>

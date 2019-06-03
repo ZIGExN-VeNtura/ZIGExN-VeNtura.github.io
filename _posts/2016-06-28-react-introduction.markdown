@@ -5,11 +5,11 @@ date:   2016-06-28
 summary: Bài viết giới thiệu cơ bản thư viện Reactjs của Facebook.
 categories: [JS Topic]
 tags: ["javascripts"]
-image: images/react-logo.png
+image: assets/images/react-logo.png
 author: Son Dang
 ---
 
-![react](/images/react-logo.png)
+![react](/assets/images/react-logo.png)
 
 ### Giới thiệu
 
@@ -24,7 +24,7 @@ React sử dụng khái niệm DOM ảo (Virtual DOM) để chọn lựa và ren
 
 #### Virtual DOM hoạt động như thế nào?
 
-![react-virtual-dom](/images/react-virtual-dom.jpg)
+![react-virtual-dom](/assets/images/react-virtual-dom.jpg)
 
 Tưởng tượng bạn có một vật thể được thiết kế dựa trên một người. Nó có mọi bộ phận một người có thể có, và phản ánh lại trạng thái hiện tại của người đó. Đây là điều cơ bản React làm với DOM.
 
