@@ -5,7 +5,7 @@ date:   2016-06-26
 summary: Bài viết giới thiệu gem parallel được sử dụng để chạy multi-threading và multi-processing
 categories: [ruby on rails]
 tags: ["ruby", "rails"]
-images: /images/ruby-threading.png
+image: assets/images/ruby-threading.png
 author: Son Dang
 ---
 
@@ -14,7 +14,7 @@ author: Son Dang
 ### Ruby và single thread
 Ruby developer đều biết là code MRI chỉ cho phép chạy single thread. Tại sao lại có điều này? MRI có một thành phần gọi là GIL (Global Interpreter Lock). Thành phần này sẽ khóa code bất kì đoạn code ruby đang được thực thi. Điều này có nghĩa là trong trường hợp chạy multi-thread, chỉ có một thread trên một process có thể thực thi ruby code trong một thời điểm.
 
-![ruby-threading](/images/ruby-threading.png)
+![ruby-threading](/assets/images/ruby-threading.png)
 
 Vì thế nếu chúng ta có 8 thread hoạt động trên một máy tính có 8 core thì chỉ có 1 thread và 1 core là được sử dụng tại một thời điểm bất kỳ. GIL tồn tại để bảo vệ ruby khỏi trường hợp tương tranh (race condition) có thể làm hỏng dữ liệu. Đây là điểm mạnh cũng như điểm yếu của ruby.
 

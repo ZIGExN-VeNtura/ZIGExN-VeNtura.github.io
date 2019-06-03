@@ -5,11 +5,11 @@ date:   2016-10-05
 summary: Bài viết giới thiệu cơ bản về chức năng recommendation của Solr
 categories: [Solr]
 tags: ["solr"]
-images: /images/solr-logo.png
+image: assets/images/solr-logo.png
 author: Son Dang
 ---
 
-![solr](/images/solr-logo.png)
+![solr](/assets/images/solr-logo.png)
 
 Khi mà công nghệ tìm kiếm được phổ biến bởi những dự án mở như Lucene và Solr thì các tổ chức bắt đầu giải quyết những vấn đề phức tạp hơn trong ứng dụng tìm kiếm của mình. Một trong những vấn đề này là làm sao để đưa nhiều thông tin có liên quan đến người dùng hơn với mục tiêu là giữ cho người dùng tương tác với ứng dụng. Để giải quyết được vấn đề này yêu cầu chương trình được thiết kế đủ thông minh để giới thiệu thêm thông tin tới người dùng thay vì họ phải tự mình tìm kiếm những thông tin đó. Solr được trang bị đầy đủ để có thể dễ dàng thực hiện chức năng này.
 

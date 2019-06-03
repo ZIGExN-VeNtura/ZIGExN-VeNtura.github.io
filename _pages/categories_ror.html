@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Articles by category - Infrastructure
-permalink: /categories/infrastructure/
+title: Articles by category - Ruby on rails
+permalink: /categories/ruby on rails/
 ---
 <div class="post-content_detail">
   <header class="post-header">
@@ -11,7 +11,7 @@ permalink: /categories/infrastructure/
     {% assign t = category | first %}
     {% assign posts = category | last %}
     {% capture cat %}{{ category | first }}{% endcapture %}
-      {% if cat == "infrastructure" %}
+      {% if cat == "ruby on rails" %}
         <h3 id="{{ category | first }}">{{ category | first }} - ({{ posts | size }})</h3>
         {% for posts in category %}
           <ul>

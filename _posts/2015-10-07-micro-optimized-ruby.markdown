@@ -5,7 +5,7 @@ date:   2015-10-07
 summary: Bài viết giới thiệu một số kỹ thuật optimize Ruby code. Gọi là micro-optimize vì nó chỉ tăng performance lên từng chút một, nhưng nhiều cái micro đó góp lại sẽ tăng performance của cả hệ thống lên đáng kể
 categories: [ruby on rails]
 tags: [""]
-images: /images/micro_optimize_ruby.jpg
+image: assets/images/micro_optimize_ruby.jpg
 author: Vinh Nguyen
 ---
 
@@ -28,7 +28,7 @@ Một vấn đề quan trọng khi optimize chính là cần phải benchmark, n
 Rất hữu dụng khi muốn so sánh tốc độ thực thi giữa 2 đoạn code. Cách sử dụng rất đơn giản:
 
 {% highlight ruby %}
-require benchmark/ips 
+require benchmark/ips
 
 Benchmark.ips do |x|
   x.report( fast ) { fast_code }

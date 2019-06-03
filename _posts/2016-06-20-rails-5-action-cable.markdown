@@ -5,7 +5,7 @@ date:   2016-06-26
 summary: Bài viết giới thiệu về tính năng action cable của Rails 5
 categories: [ruby on rails]
 tags: ["ruby", "rails"]
-images: /images/rails5.png
+image: assets/images/rails5.png
 author: Vy Dao
 ---
 
@@ -22,7 +22,7 @@ Sau đó, kết nối sẽ bị đóng. Câu hỏi đặt ra là làm thế nào
 
 Không giống như HTTP, WebSockets là giao thức cho phép các client và server giữ một kết nối mở cho phép truyền dữ liệu trực tiếp. Các client đăng kí một kết nối mở với server và khi có những thông tin mới thì server sẽ broadcasts dữ liệu đó đến tất cả các client đã đăng kí. Bằng cách này, cả server và client đều biết về trạng thái của dữ liệu và có thể dễ dàng đồng bộ hóa các xuất hiện các thay đổi.
 
-![http-websocket](/images/http-websocket.png)
+![http-websocket](/assets/images/http-websocket.png)
 
 Các controller của Rails được xây dựng nhằm mục đích xử lý các request HTTP và Rails đã đưa ra một giải pháp để handle việc tích hợp xử lý Websockets. Rails 5 sẽ có thêm một thư mục mới bên trong thư mục app gọi là channels. Channels hoạt động như các controller xử lý các request Websockets bằng cách đóng gói các logic thành các đơn vị đặc thù, ví dụ như là chat messages hoặc notifications, các client đăng kí các channels để truyền tải dữ liệu.
 
@@ -43,7 +43,7 @@ ActionCable có thể chạy trên một stand-alone server hoặc chúng ta có
 
 - Cuối cùng, ActionCable sử dụng Redis để lưu trữ dữ liệu tạm thời, đồng bộ các nội dung của ứng dụng.
 
-![rails5](/images/rails-rack.png)
+![rails5](/assets/images/rails-rack.png)
 
 ## Xây dựng một Real-Time Chat App với Action Cable
 Đầu tiên tạo một project rails 5

@@ -1,0 +1,43 @@
+<div class="sidebar">
+  <div class="sidebar-section">
+    <h5><span>Recommended</span></h5>
+    <div class="recommend-posts">
+      <ul class="posts">
+        {% assign all_posts = site.posts %}
+        {% assign min = 0 %}
+        {% assign max = all_posts.size %}
+        {% assign diff = max | minus: min %}
+        {% assign i = "now" | date: "%N" | modulo: diff | plus: min %}
+        {% assign j = i | minus: 1 %}
+        {% assign k = i | plus: 1 %}
+        <li><a href="{{ all_posts[i].url }}">{{ all_posts[i].title }}</a></li>
+        <li><a href="{{ all_posts[j].url }}">{{ all_posts[j].title }}</a></li>
+        <li><a href="{{ all_posts[k].url }}">{{ all_posts[k].title }}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="sidebar-section">
+    <h5><span>Recent posts</span></h5>
+    <ul class="posts">
+      {% for post in site.posts limit:3 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <h5><span>Top authors</span></h5>
+    <ul style="list-none;">
+      {% assign posts_grouped = site.posts | group_by: "author" | sort: 'size' | reverse %}
+      {% for author in posts_grouped limit:3 %}
+      {% assign author_info = site.authors[author.name] %}
+      {% assign author_name = author_info.name | default: author.name %}
+      {% assign author_img = author_info.img | default: "https://www.gravatar.com/avatar/?s=250&d=mm&r=x" %}
+      <div class="author">
+        <a href="{{ author_info.url }}" target="_blank"><strong>{{ author_name }}</strong></a>
+        <img src="{{ author_img }}" />
+        <small>{{ author.items.size }} posts</small>
+      </div>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

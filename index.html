@@ -1,35 +1,79 @@
 ---
 layout: default
+title: Home
 ---
-<div class="home">
-  <div class="header_join">
-    <div class="slogan_top">Bring Innovation from Vietnam to the World!</div>
-    <div class="join_us">
-      <a class="btn_join" href="{{ site.link_recruitment }}">JOIN US NOW</a>
+
+<!-- Home Jumbotron
+================================================== -->
+<!-- <section class="intro full-width">
+    <div class="wrapintro">
+        <h1>Jekyll Theme for Marketers</h1>
+        <h2 class="lead">"Affiliates" is a Jekyll theme designed & developed by WowThemesNet, best suitable for affiliate marketing.</h2>
+        <a href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip" class="btn">Download</a>
     </div>
-  </div>
-  <div class="post-list">
-    {% for post in paginator.posts %}
-      <div class="post-item">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - {{ post.author }}
-          {% for category in post.categories %}
-            <a href="/categories/{{ category }}"> - {{ category }}</a>
-          {% endfor %}
-        </span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img class="img_post" src="{{post.images}}" alt="{{post.images}}"></a>
-        <h2>
-          <br/>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p>{{ post.summary | truncatewords: 40 }}</p>
-        <div class="btn_readmore"><a href="{{ post.url | prepend: site.baseurl }}"><span class="readmore">Read more »</span></a></div>
-      </div>
+</section>
+ -->
+
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+
+    <div class="row listfeaturedtag">
+
+    {% for post in site.posts %}
+
+        {% if post.featured == true %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
     {% endfor %}
-    {% include paginator.html %}
+
+    </div>
+
+</section>
+
+<!-- Posts Index
+================================================== -->
+{% if paginator.previous_page %}
+{% if paginator.previous_page > 0 %}
+<div id="jumptopageof"></div>
+{% endif %}
+{% endif %}
+
+<section class="recent-posts row">
+
+  <div class="col-sm-8">
+
+      <div class="section-title">
+          <h2><span>All Stories</span></h2>
+      </div>
+
+      <div class="row listrecent"> <!-- class masonrygrid -->
+
+          {% for post in paginator.posts %}
+            {% include postbox.html %}
+          {% endfor %}
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="bottompagination">
+
+          <span class="navigation" role="navigation">
+
+              {% include pagination.html %}
+
+          </span>
+
+      </div>
   </div>
-  <div class="nav-right">
-    {% include nav_right.html %}
+  <div class="col-sm-4">
+    {% include sidebar.html %}
   </div>
-<br/>
-  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>
+</section>

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Articles by category - Ruby on rails
-permalink: /categories/ruby on rails/
+title: Articles by category - Web development
+permalink: /categories/web development/
 ---
 <div class="post-content_detail">
   <header class="post-header">
@@ -11,7 +11,7 @@ permalink: /categories/ruby on rails/
     {% assign t = category | first %}
     {% assign posts = category | last %}
     {% capture cat %}{{ category | first }}{% endcapture %}
-      {% if cat == "ruby on rails" %}
+      {% if cat == "web development" %}
         <h3 id="{{ category | first }}">{{ category | first }} - ({{ posts | size }})</h3>
         {% for posts in category %}
           <ul>

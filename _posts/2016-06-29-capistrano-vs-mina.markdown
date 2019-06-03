@@ -5,7 +5,7 @@ date:   2016-06-29
 summary: Sự khác biệt giữa Capistrano và Mina trong việc Deploy Rails Application
 categories: [Rails]
 tags: ["deployment"]
-images: /images/mina.jpg
+image: assets/images/mina.jpg
 author: Kiet Nguyen
 ---
 
@@ -114,13 +114,13 @@ Một ví dụ về tốc độ giữa Capistrano và Mina trong việc deploy:
 
 Đối với một project nhỏ: Deploy lần đầu tiên Capistrano mâts khoảng 55s thì Mina chỉ mất có 9s đê deploy xong. Rất nhanh. Mina nhanh hơn Capistrano gần 8 lần
 
-![mina-faster-7xtime](/images/mina.jpg)
+![mina-faster-7xtime](/assets/images/mina.jpg)
 
 Còn đối với project lớn: Mina nhanh hơn Capistrano gần 28 lần. Great!
 
 Deploy lần đầu tiên Capistrano mất 15 phút thì Mina mất 11 phút. Deploy lần 2 trở đi thì Capistrano mất 140s trong khi Mina mất chỉ 5s
 
-![mina-faster-7xtime](/images/mina2.jpg)
+![mina-faster-7xtime](/assets/images/mina2.jpg)
 
 ### IV. Tại sao Mina lại nhanh hơn Capistrano ?
 

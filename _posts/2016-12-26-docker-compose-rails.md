@@ -5,11 +5,11 @@ date:   2016-12-26
 summary: Giới thiệu cách setup môi trường development cho một dự án Rails cơ bản.
 categories: [Docker]
 tags: ["docker", "docker-compose", "rails", "devops"]
-images: /images/docker-funny.png
+image: assets/images/docker-funny.png
 author: Son Dang
 ---
 
-![docker](/images/docker-compose.png)
+![docker](/assets/images/docker-compose.png)
 
 Docker là một công cụ hữu ích khi bạn muốn xây dựng một môi trường development tương đồng với production. Với Docker Compose, Docker càng giúp ích hơn cho developer với nhu cầu tách các dependencies như MySQL, Solr hay Redis ra thành các components riêng biệt. Trong bài viết này, mình sẽ hướng dẫn các bạn các thiết lập môi trường development cho Rails app đơn giản với Docker và Docker Compose.
 
