@@ -1,0 +1,25 @@
+---
+layout: default
+title: Post by categories
+permalink: /categories
+---
+<section class="row recent-posts">
+  <div class="col-md-8 col-lg-8">
+    <div class="section-title">
+      <h2><span>{{ page.type }} '{{ page.title }}'</span></h2>
+    </div>
+    {% assign posts_grouped = site.posts | group_by: "categories" %}
+    {{ posts_grouped }}
+    {% for category in posts_grouped %}
+      {{ category.name }} {{ category.size }}
+    {% endfor %}
+    <div class="masonrygrid row listrecent">
+      {% for post in page.posts %}
+      {% include postbox.html %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-md-4 col-lg-4">
+    {% include sidebar.html %}
+  </div>
+</section>

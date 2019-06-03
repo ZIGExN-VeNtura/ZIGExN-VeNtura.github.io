@@ -3,7 +3,7 @@ layout: post
 title:  "Sử dụng gem cells trong ruby on rails"
 date:   2017-07-14
 summary: Cells là 1 gem được sử dụng để gộp cả view lẫn controller lại thành 1 package.
-categories: [Ruby]
+categories: [Ruby, XXX]
 tags: ["Ruby"]
 image: assets/images/cells.jpg
 author: Trong Huu
