@@ -5,7 +5,7 @@ date:   2017-07-14
 summary: Cells là 1 gem được sử dụng để gộp cả view lẫn controller lại thành 1 package.
 categories: [Ruby]
 tags: ["Ruby"]
-images: /images/cells.jpg
+image: images/cells.jpg
 author: Trong Huu
 ---
 

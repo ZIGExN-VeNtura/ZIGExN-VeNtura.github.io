@@ -5,7 +5,7 @@ date:   2015-09-02 23:55:00
 summary: Ngày nay, trong quá trình làm việc nhóm trong 1 dự án code thì GIT là 1 công cụ không thể thiếu được. GIT giúp từng cá nhân theo dõi, phát triển từng chức năng riêng biệt. Đồng thời, GIT cũng hỗ trợ tốt trong việc làm việc nhóm, giúp hợp nhất các đóng góp của mỗi thành viên trong nhóm
 categories: [web development]
 tags: ["git"]
-images: /images/socialite.jpg
+image: images/socialite.jpg
 author: Lân Nguyễn
 ---
 
@@ -26,7 +26,7 @@ Thông thường sẽ có 2 thời điểm chúng ta phát hiện cần sửa 1 
 
   + Thứ nhất, **khi vừa commit xong**, ta phát hiện ra còn thiếu file hoặc cần sửa gấp 1 vài đoạn nhỏ trong code (như chưa xóa debugger, chưa đặt method vào vùng private...)
 Cách sửa gấp:
- 
+
     + Sửa các file đó
     + Add vào repo: **git add .**
     + Thêm file đó vào commit trước đó: **git commit --amend**. Lệnh này sẽ đưa ra màn hình editor với nội dung gồm commit message của commit trước và các file của commit cũ cộng với các file mới thêm vào. Từ đây ta có thể sửa commit message cũ hoặc không, sau đó sẽ thoát ra. Git sẽ tạo ra 1 commit với id mới bao gồm tất cả các file cũ và mới
@@ -68,20 +68,20 @@ d, **Một số commit không theo đúng thứ tự, cần sắp xếp lại**
 ![VIM REBASE REORDER](/images/reorder_rebase.png)
 
 ![VIM REBASE REORDER](/images/reorder_result.png)
-   
-  
+
+
 __2. Feature branch cần cập nhật từ phần chung khi xảy ra conflict hoặc lấy phần mới từ người khác__
 
-Sau khi các thành viên trong team phát triển độc lập chức năng của mình, tạo pullrequest để merge vào branch chính. 
+Sau khi các thành viên trong team phát triển độc lập chức năng của mình, tạo pullrequest để merge vào branch chính.
 Khi đó sẽ xảy ra việc hai hay nhiều thành viên cùng sửa chung 1 dòng code dẫn đến việc xảy ra conflict. Vì vậy để ngăn trước trường hợp này xảy ra thì việc **chia vùng chức năng với mức ràng buộc giữa các chức năng với nhau ít** sẽ giúp cho giảm thiểu conflict code giữa các thành viên trong team. Có 2 cách để lấy code từ branch chính về feature branch là dùng: **git rebase** hoặc **git merge**
 
 Có rất nhiều quan điểm cũng như tranh cãi giữa việc sử dụng 2 cách rebase và merge này. Nhưng chúng ta cùng đi phân tích điểm lợi, điểm hại của 2 phương pháp này:
 
-+ **Git merge**: 
++ **Git merge**:
   + Merge code giữa 2 branch và sắp xếp các commit message tính từ điểm mà feature branch đó checkout từ branch chính, đồng thời tạo 1 merge commit
   + Để đồng bộ với remote server (github, bitbucket): git push origin feature_branch
 
-+ **Git rebase**: 
++ **Git rebase**:
   + Move các commit tính từ thời điểm checkout ra 1 branch tạm thời
   + Chuyển commit branch chính sang feature branch
   + Chuyển các commit từ branch tạm về đỉnh của feature branch

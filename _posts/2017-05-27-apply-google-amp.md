@@ -5,7 +5,7 @@ date:   2017-05-27
 summary: Bài viết tổng hợp các lưu ý đẻ tạo AMP view tiêu chuẩn cho ứng dụng Rails
 categories: [AMP]
 tags: ["amp"]
-images: /images/amp.jpg
+image: images/amp.jpg
 author: Vy Dao
 ---
 

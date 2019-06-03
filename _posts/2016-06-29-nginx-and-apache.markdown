@@ -5,7 +5,9 @@ date:   2016-06-29
 summary: NGINX và APACHE là 2 open source web server phổ biến nhất hiện nay. Chúng phục vụ hơn 50% lượng traffic trên mạng internet.
 categories: [Infrastructure]
 tags: ["web server"]
-images: /images/nginx-vs-apache.png
+image: images/nginx-vs-apache.png
+featured: true
+
 author: Kiet Nguyen
 ---
 

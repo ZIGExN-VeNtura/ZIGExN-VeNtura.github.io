@@ -5,7 +5,7 @@ date:   2016-06-14
 summary: Bài viết giới thiệu process và thread và sự khác nhau giữa hai khái niệm này.
 categories: [Infrastructure]
 tags: ["ruby"]
-images: /images/process-threads.png
+image: images/process-threads.png
 author: Son Dang
 ---
 

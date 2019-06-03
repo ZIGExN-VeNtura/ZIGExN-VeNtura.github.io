@@ -5,7 +5,7 @@ date:   2016-12-26
 summary: Giới thiệu cách setup môi trường development cho một dự án Rails cơ bản.
 categories: [Docker]
 tags: ["docker", "docker-compose", "rails", "devops"]
-images: /images/docker-funny.png
+image: images/docker-funny.png
 author: Son Dang
 ---
 

@@ -5,7 +5,7 @@ date:   2014-11-07 23:55:00
 summary: Tiếp theo bài giới thiệu về Ruby Rack trước, bài viết này sẽ đi sâu vào phân tích ứng dụng của Rack trong Rails.
 categories: [ruby on rails]
 tags: [""]
-images: /images/rack-logo.png
+image: images/rack-logo.png
 author: Vinh Nguyen
 ---
 

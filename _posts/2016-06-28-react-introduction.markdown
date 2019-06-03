@@ -5,7 +5,7 @@ date:   2016-06-28
 summary: Bài viết giới thiệu cơ bản thư viện Reactjs của Facebook.
 categories: [JS Topic]
 tags: ["javascripts"]
-images: /images/react-logo.png
+image: images/react-logo.png
 author: Son Dang
 ---
 

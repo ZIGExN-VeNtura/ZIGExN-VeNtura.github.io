@@ -5,7 +5,7 @@ date:   2016-06-26
 summary: Bài viết giới thiệu về tính năng action cable của Rails 5
 categories: [ruby on rails]
 tags: ["ruby", "rails"]
-images: /images/rails5.png
+image: images/rails5.png
 author: Vy Dao
 ---
 

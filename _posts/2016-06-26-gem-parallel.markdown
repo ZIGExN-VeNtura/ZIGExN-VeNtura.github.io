@@ -5,7 +5,7 @@ date:   2016-06-26
 summary: Bài viết giới thiệu gem parallel được sử dụng để chạy multi-threading và multi-processing
 categories: [ruby on rails]
 tags: ["ruby", "rails"]
-images: /images/ruby-threading.png
+image: images/ruby-threading.png
 author: Son Dang
 ---
 

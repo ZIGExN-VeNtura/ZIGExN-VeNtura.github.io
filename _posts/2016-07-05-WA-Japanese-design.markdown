@@ -2,10 +2,10 @@
 layout: post
 title:  "Giới thiệu phong cách Web Design của Nhật Bản"
 date:   2016-07-05
-summary: Dịch từ một bài viết hay giới thiệu về phong cách thiết kế Web design của Nhật Bản 
+summary: Dịch từ một bài viết hay giới thiệu về phong cách thiết kế Web design của Nhật Bản
 categories: [design]
 tags: ["design"]
-images: /images/thumb_wa.jpg
+image: images/thumb_wa.jpg
 author: Thao Phan
 ---
 
@@ -19,7 +19,7 @@ Sự thu hút đến từ cách phối màu , bố cục, font chữ. Design pho
 ## 1. Phối màu
 Cái gì làm chúng ta gợi nhớ đến design phong cách Nhật ? Có lẽ không ít người hình dung đó đó chắc chắn không phải là màu hồng chói hay màu trắng trong suốt, mà là tổng hòa những gam màu hơi trầm, dịu. Ở Nhật, có những màu sắc & cách phối màu truyền thống, nếu sử dụng chúng ngọt ngào, bạn sẽ tiến rất gần đến design mang phong cach Nhật Bản.
 
-※  Bảng màu truyền thống 
+※  Bảng màu truyền thống
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/wa-colour-dictionary.jpg)
 
@@ -30,7 +30,7 @@ Từ điển màu truyền thống sẽ giới thiệu những gam màu phong c�
 Japanese Color combination KASANE là cách phối màu chồng nhiều lớp của kimono ra đời từ phục trang của quốc gia trong thời Heian. Màu sắc bề mặt và bên trong của chất liệu thể hiện sự biến đổi 4 mùa của Nhật Bản.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/kasane.jpg)
- 
+
 Giới thiệu bên dưới là tự điển mã màu theo cách phối Japanese color combination KASANE.
 
 [http://www.colordic.org/w](http://www.colordic.org/w/){:rel="nofollow"}
@@ -71,12 +71,12 @@ Bên dưới, là một số ý tưởng phối màu tương thích với phong 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/colour10.png)
 #AF736B, #FF9E73, #FCE1B4, #9EB394, #1E3835
 
-## 2. Những họa tiết mang phong cách Nhật 
+## 2. Những họa tiết mang phong cách Nhật
 
 Sóng nước, cánh hoa anh đào, hình xoắn ốc,  họa tiết bàn cờ,..hay có những họa tiết độc đáo được ưa chuộng từ xưa đến nay.
 
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/pattern1.jpg)
- 
+
 [http://japanese-pattern.info](http://japanese-pattern.info/){:rel="nofollow"}
 Webiste này không chỉ cung cấp những họa tiết truyền thống, mà có cả những họa tiết chấm bi, họa tiết paisley ...
 
@@ -92,7 +92,7 @@ Một số link download tham khảo
 [http://www.wafusozai.com](http://www.wafusozai.com/){:rel="nofollow"}
 ![alt text](http://www.webcreatorbox.com/wp-content/uploads/2014/11/illutration1.jpg)
 
-## 4. Font chữ 
+## 4. Font chữ
 
 Trong Web design phong cách Nhật, font Mincho hay được sử dung. Font Mincho là font chữ từ Trung Quốc truyền vào, và được sử dụng phổ biến. Được yêu thích từ xưa nên rất hợp với design phong cách Nhật. Mouhitsu Bold Font là font chữ như được viết bằng bút lông cũng khá phổ biến.
 

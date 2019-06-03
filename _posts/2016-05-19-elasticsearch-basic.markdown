@@ -5,7 +5,7 @@ date:   2016-05-30 23:55:00
 summary: Hướng dẫn sử dụng elasticsearch với Ruby On Rails.
 categories: [web development]
 tags: ["elasticsearch", 'Rails']
-images: /images/elasticsearch-rails.jpg
+image: images/elasticsearch-rails.jpg
 author: KhieuLQ
 ---
 

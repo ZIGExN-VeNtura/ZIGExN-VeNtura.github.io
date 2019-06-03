@@ -5,7 +5,7 @@ date:   2016-12-23
 summary: Bài viết giới thiệu cơ bản về cách sử dụng kỹ thuật regex dùng để xử lý chuỗi trong ruby.
 categories: [Ruby]
 tags: ["Ruby"]
-images: /images/regex.jpg
+image: images/regex.jpg
 author: Trong Huu
 ---
 

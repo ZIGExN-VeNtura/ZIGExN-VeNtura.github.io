@@ -5,8 +5,10 @@ date:   2017-01-10
 summary: Trong bài viết này, ta sẽ làm quen với khái niệm signal trong Linux và cách xử lý các signal này trong Ruby.
 categories: [Ruby]
 tags: ["ruby", "devops"]
-images: /images/linux-signal.png
+image: images/linux-signal.png
 author: Vinh Nguyen
+featured: true
+
 ---
 
 ### Cơ chế chia sẽ thông tin giữa process trong Linux

@@ -1,0 +1,57 @@
+.about_nav h4 {
+  margin-bottom: .1rem;
+}
+
+.business_title {
+  color: #33c273;
+}
+
+.global_title {
+  color: #ffc633;
+}
+
+.social_title {
+  color: #0098d5;
+}
+
+.technology_title {
+  color: #e8404d;
+}
+
+.creation_title {
+  color: #e85298;
+}
+
+.evolution_title {
+  color: #9f4f9d;
+}
+
+.author {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.author img {
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 15px;
+  float: left;
+}
+
+.author small {
+  color: #000;
+  display: block;
+  font-size: 70%;
+}
+
+.author-meta {
+  font-size: .8rem;
+  margin-bottom: 4px;
+}
+
+.post-meta {
+  margin-bottom: 0;
+  .card-title {
+    margin-bottom: 6px;
+  }
+}

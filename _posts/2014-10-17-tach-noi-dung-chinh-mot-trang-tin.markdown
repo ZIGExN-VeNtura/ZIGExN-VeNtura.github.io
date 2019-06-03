@@ -5,7 +5,7 @@ date:   2014-10-17 23:55:00
 summary: Trong bài viết này mình xin trình bày một thuật toán để tách nội dung chính của một trang web(tin tức).
 categories: [ruby on rails]
 tags: [""]
-images: /images/SafariReaderActive.png
+image: images/SafariReaderActive.png
 author: Vinh Nguyen
 ---
 

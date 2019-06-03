@@ -5,7 +5,7 @@ date:   2016-10-05
 summary: Bài viết giới thiệu cơ bản về chức năng recommendation của Solr
 categories: [Solr]
 tags: ["solr"]
-images: /images/solr-logo.png
+image: images/solr-logo.png
 author: Son Dang
 ---
 
