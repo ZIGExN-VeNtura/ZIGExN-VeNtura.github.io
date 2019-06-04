@@ -6,6 +6,7 @@ summary: Dịch từ một bài viết hay giới thiệu về phong cách thi�
 categories: [design]
 tags: ["design"]
 image: assets/images/thumb_wa.jpg
+image_hidden: true
 author: Thao Phan
 ---
 

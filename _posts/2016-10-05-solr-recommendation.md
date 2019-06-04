@@ -6,6 +6,7 @@ summary: Bài viết giới thiệu cơ bản về chức năng recommendation c
 categories: [Solr]
 tags: ["solr"]
 image: assets/images/solr-logo.png
+image_hidden: true
 author: Son Dang
 ---
 

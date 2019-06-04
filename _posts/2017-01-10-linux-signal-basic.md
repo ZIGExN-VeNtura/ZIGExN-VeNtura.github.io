@@ -6,6 +6,7 @@ summary: Trong bài viết này, ta sẽ làm quen với khái niệm signal tro
 categories: [Ruby]
 tags: ["ruby", "devops"]
 image: assets/images/linux-signal.png
+image_hidden: true
 author: Vinh Nguyen
 featured: true
 

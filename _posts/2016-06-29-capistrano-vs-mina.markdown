@@ -3,7 +3,7 @@ layout: post
 title:  "Capistrano VS Mina"
 date:   2016-06-29
 summary: Sự khác biệt giữa Capistrano và Mina trong việc Deploy Rails Application
-categories: [Rails]
+categories: [ruby on rails]
 tags: ["deployment"]
 image: assets/images/mina.jpg
 author: Kiet Nguyen
