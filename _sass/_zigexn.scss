@@ -63,6 +63,35 @@
   }
 }
 
+.card-body.postbox {
+  width: 100%;
+  border-radius: 0;
+  .card-block {
+    padding: 1rem;
+  }
+  h2.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    color: #000;
+    line-height: 1.4;
+  }
+}
+
+.post-categories {
+  margin-bottom: 3rem;
+  .category hr {
+    margin: 8px 0;
+  }
+  .category a:hover {
+    text-decoration: none;
+  }
+}
+.categories {
+  .listrecent {
+    padding-left: 1.5rem;
+  }
+}
+
 @media (min-width: 992px) {
   .main-container {
     min-height: calc(100vh - 500px);
@@ -74,3 +103,4 @@
     min-height: calc(100vh - 501px);
   }
 }
+
