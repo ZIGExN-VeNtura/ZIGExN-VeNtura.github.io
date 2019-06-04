@@ -6,6 +6,7 @@ summary:  Tìm hiểu về cách sử dụng Rspec để kiểm thử chức nă
 categories: [web development]
 tags: ["rspec", "testing", "TDD"]
 image: assets/images/testing.jpg
+image_hidden: true
 author: Vy Dao
 ---
 ![TESTING](/assets/images/testing.jpg)

@@ -6,6 +6,7 @@ summary: Bài viết giới thiệu cơ bản thư viện Reactjs của Facebook
 categories: [JS Topic]
 tags: ["javascripts"]
 image: assets/images/react-logo.png
+image_hidden: true
 author: Son Dang
 ---
 

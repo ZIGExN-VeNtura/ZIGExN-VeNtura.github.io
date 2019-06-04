@@ -6,6 +6,7 @@ summary: VIM là 1 công cụ soạn thảo tuyệt vời cho rails. VIM cung c�
 categories: [ruby on rails]
 tags: [""]
 image: assets/images/chimen.png
+image_hidden: true
 author: Lân Nguyễn
 ---
 

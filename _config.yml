@@ -1,13 +1,12 @@
 # Site
 name: Zigexn VeNtura Technical Blog
 title: Zigexn VeNtura Technical Blog
-description: > # this means to ignore newlines until "baseurl:"
- <b>Thông tin liên hệ:</b> Lầu 4, MIRAE BUSINESS CENTER 268 Tô Hiến Thành, Phường 15 Quận 10, Tp. Hồ Chí Minh, Việt Nam.<br><i>Phone:</i> (84)-838-633-399 - <i>Email:</i> <a href='mailto:info@zigexn.vn'>info@zigexn.vn</a>
+description: Technical Blog là nơi hội tụ tất cả các bài viết về công nghệ được đúc kết lại từ kinh nghiệm làm việc cũng như sự tìm tòi, nghiên cứu của những kỹ sư trẻ tại ZIGExN VeNtura, là nơi mà các VeNers có thể thỏa sức đam mê của mình sáng tạo cùng công nghệ, học hỏi và chia sẻ kinh nghiệm IT với tất cả mọi người.
 meta_description: Zigexn VeNtura Technical Blog
 logo: assets/images/logo.png
 favicon: assets/images/favicon.ico
 baseurl: ""
-email: wowthemesnet@gmail.com
+email: info@zigexn.vn
 google_analytics: "" #UA-46278016-1
 disqus: ""
 sharethis: "" # <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'

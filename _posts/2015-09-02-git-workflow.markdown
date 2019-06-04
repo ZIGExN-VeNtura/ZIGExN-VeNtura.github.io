@@ -6,6 +6,7 @@ summary: Ngày nay, trong quá trình làm việc nhóm trong 1 dự án code th
 categories: [web development]
 tags: ["git"]
 image: assets/images/socialite.jpg
+image_hidden: true
 author: Lân Nguyễn
 ---
 

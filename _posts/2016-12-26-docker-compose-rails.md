@@ -6,6 +6,7 @@ summary: Giới thiệu cách setup môi trường development cho một dự á
 categories: [Docker]
 tags: ["docker", "docker-compose", "rails", "devops"]
 image: assets/images/docker-funny.png
+image_hidden: true
 author: Son Dang
 ---
 

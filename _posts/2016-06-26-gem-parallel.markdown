@@ -6,6 +6,7 @@ summary: Bài viết giới thiệu gem parallel được sử dụng để ch�
 categories: [ruby on rails]
 tags: ["ruby", "rails"]
 image: assets/images/ruby-threading.png
+image_hidden: true
 author: Son Dang
 ---
 
