@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Xử lí magic number trong Rails
+title:  Xử lý magic number trong Rails
 date:   2019-07-25
 summary: Magic number là những đoạn hardcode, giá trị tĩnh và không rõ ràng khiến code chúng ta bốc mùi...
 categories: [ruby on rails]
@@ -22,17 +22,17 @@ end
 ```ruby
 validates :name, length: {maximum: 100}
 ```
-Những đoạn code như trên sẽ dấn đến các vấn đề như:
+Những đoạn code như trên sẽ dẫn đến các vấn đề như:
 - Khó khăn trong việc review và đọc code  
-  (Người đọc code sẽ cần phải tìm xem "21" là client nào)
+  (Người đọc code sẽ cần phải tìm xem 21 là client nào)
 - Dễ sai sót trong việc maintaince  
-  (Thay đổi giá trị ở class này những quên class khác)
+  (Thay đổi giá trị ở class này nhưng quên ở class khác)
 
-### Cách xử lí magic number
+### Cách xử lý magic number
 ##### 1. Các hàm có sẵn
 ```ruby
 numbers = [1, 2, 3]
-language = "Ruby"
+language = 'Ruby'
 ```
 ```ruby
 # bad
@@ -66,11 +66,11 @@ end
 ```
 
 ##### 3. Gem Config
-Gem config giúp chúng ta dễ dàng quản lí và sử dụng các giá trị setting của hệ thống.  
+Gem config giúp chúng ta dễ dàng quản lý và sử dụng các giá trị setting của hệ thống.  
 Cài đặt gem `config`
 ```ruby
 # Gemfile
-gem "config"
+gem 'config'
 ```
 ```ruby
 bundle install
@@ -83,7 +83,7 @@ Thêm các giá trị cần dùng vào file `settings.yml`
 client:
   zigexn:
     id: 21
-    name: "Zigexn"
+    name: Zigexn
 ```
 Sử dụng trong code
 ```ruby
@@ -96,7 +96,7 @@ end
 
 
 ### Tổng kết
-Vậy là mình đã hoàn thành bài giải thích khái niệm magic number và cách xử lí chúng trong Rails.  
+Vậy là mình đã hoàn thành bài giải thích khái niệm magic number và cách xử lý chúng trong Rails.  
 Cùng quay lại project của mình và xem code của mình có đang bốc mùi không nhé ;)
 
 ***
