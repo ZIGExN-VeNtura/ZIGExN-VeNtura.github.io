@@ -10,7 +10,7 @@ author: Anh Dep Trai
 
 ---
 
-### Giới thiệu:
+### Giới thiệu
 Trong quá trình phát triển một website thì SEO là một công việc không thể thiếu. Định nghĩa đơn giản nhất SEO là quá trình tối ưu hóa trang web của bạn cho công cụ Tìm kiếm. SEO có rất nhiều kỹ thuật như:
 - Thêm menu Breadcrumbs cho bài đăng và trang của bạn
 - Kiểm tra URL chuẩn của bạn
@@ -104,3 +104,8 @@ Sitemap: http://www.anh_dep_trai.com/sitemap.xml.gz
 
 Đây là những kiến thức cơ bản. Còn nhiều cái phức tạp hơn mình sẽ có một bài viết chia sẽ ở bài viết sau.
 Chúc các bạn code zui zẻ.
+
+### Nguồn tham khảo
+1.  [https://support.google.com/webmasters/answer/183668?hl=en](https://support.google.com/webmasters/answer/183668?hl=en)
+2.  [https://github.com/kjvarga/sitemap_generator](https://github.com/kjvarga/sitemap_generator)
+3.  [https://www.sitepoint.com/start-your-seo-right-with-sitemaps-on-rails/](https://www.sitepoint.com/start-your-seo-right-with-sitemaps-on-rails/)
