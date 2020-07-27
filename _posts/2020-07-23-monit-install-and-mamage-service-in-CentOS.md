@@ -15,15 +15,16 @@ author: Anh Dep Trai
 Xin chào các bạn! Hôm nay mình xin chia sẻ với các bạn một cái hay vừa mới tìm hiểu được. Bài viết này chỉ là những cái cơ bản nhất. Còn cao hơn thì mình sẽ tìm hiểu và cập nhật thêm ở những bài viết sau.
 
 Cái mà mình giới thiệu hôm nay là gì? Đó là [Monit](https://en.wikipedia.org/wiki/Monit).
-Monit là một công cụ giám sát mã nguồn mở miễn phí cho Unix and Linux. Do mình mới dùng nên về phần so sánh với các monitor khác thì mình sẽ tìm hiểu thêm. Hiện tại mình thấy Monit khá là tiện lợi, tự động, dễ sử dụng. Nó có thể dùng để quản lý và theo dõi như: programs, files, directories,...
+Monit là một công cụ giám sát mã nguồn mở miễn phí cho Unix và Linux. Do mình mới dùng nên về phần so sánh với các monitor khác thì mình sẽ tìm hiểu thêm. Hiện tại mình thấy Monit khá là tiện lợi, tự động, dễ sử dụng. Nó có thể dùng để quản lý và theo dõi mọi thứ như: check programs, check files, check directories, check host...
 
 ### Cài Đặt
 
+Để cài đặt ta dùng lệnh
 {% highlight ruby %}
 yum -y install monit
 {% endhighlight %}
 
-Sau đó start Monit với command:
+Sau đó start Monit với lệnh:
 {% highlight ruby %}
 monit
 {% endhighlight %}
@@ -33,21 +34,23 @@ Kiểm tra trạng thái của Monit:
 monit status
 {% endhighlight %}
 
-Chú ý: các bạn muốn cho Monit nó tự động start khi restart lại service thì dùng command sau:
-Cái mình ví dụ là CentOS 6
+Chú ý: các bạn muốn cho Monit nó tự động start khi restart lại máy thì dùng lệnh sau:
+
+(ví dụ trên CentOS 6)
 {% highlight ruby %}
 service monit enable
 {% endhighlight %}
 
-Kiểm tra
+Kiểm tra xem đã start cùng với máy chưa
 {% highlight ruby %}
-chkconfig --list
+chkconfig --list | grep monit
 {% endhighlight %}
 
 ![Monit check config](/assets/images/monit_chkconfig.png)
 
 ###  Config Monit
-Monit config file lưu trong `/etc/monit.conf`
+
+Tiếp theo là config Monit, bằng cách edit file `/etc/monit.conf`
 {% highlight ruby %}
 vi /etc/monit.conf
 {% endhighlight %}
@@ -87,9 +90,14 @@ Reload lại Monit với lệnh
 
 ### Config để Monitor Service
 
-Những file config các bạn thêm vào thì mình để trong `/etc/monit.d/` để dễ quản lý
+Các bạn chú ý ở file config `/etc/monit.conf`, cuối file có include
+{% highlight ruby %}
+include /etc/monit.d/*
+{% endhighlight %}
 
-Ví dụ như config cho `sshd`
+Nên những file config các bạn thêm vào thì mình để trong `/etc/monit.d/` để dễ quản lý
+
+Ví dụ như config cho `sshd`.
 Đầu tiên mình tạo 1 file config `etc/monit.d/sshd_monitor` với nội dung sau:
 
 {% highlight ruby %}
